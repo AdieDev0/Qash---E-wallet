@@ -2,13 +2,14 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div>
-      <div >
+    <div className="bg-stone-800 px-20">
+      <div className="flex items-center justify-between">
         <div>
-          <p>QASH</p>
+          {/* TEXT LOGO */}
+          <p className="text-5xl text-purple-700 font-extrabold">QASH</p>
         </div>
-        <div className="flex items-center">
-          <h1>Home</h1>
+        <div className="flex items-center gap-5">
+          <h1 className="text-white">Home</h1>
           {/* HOVER BUTTON */}
           <div className="dropdown dropdown-hover">
             <div tabIndex={0} role="button" className="btn m-1">
@@ -43,11 +44,13 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <h1>Deals</h1>
-          <h1>Partner Merchants</h1>
-          <h1>Stories</h1>
-          <h1>Careers</h1>
-          <button>Download Now</button>
+          <h1 className="text-white">Deals</h1>
+          <h1 className="text-white">Partner Merchants</h1>
+          <h1 className="text-white">Stories</h1>
+          <h1 className="text-white">Careers</h1>
+          <button className="bg-white px-5 py-2 font-medium rounded-xl text-black cursor-pointer hover:bg-white/85 duration-200">
+            Download Now
+          </button>
         </div>
       </div>
     </div>
