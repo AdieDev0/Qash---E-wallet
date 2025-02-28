@@ -1,12 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./Components/Navbar";
+import StickyNavbar from "./Components/StickyNavbar";
+import upperNavbar from "./Components/upperNavbar";
 const App = () => {
-  return;
-  <Router>
-    <Navbar/>
-    <Routes></Routes>
-  </Router>;
+  return (
+    <Router>
+      <upperNavbar />
+      <StickyNavbar />
+      <Routes></Routes>
+    </Router>
+  );
 };
 
 export default App;
