@@ -1,5 +1,5 @@
 import React from "react";
-
+import { FaAngleDown } from "react-icons/fa";
 const Navbar = () => {
   return (
     <div className="bg-stone-800 px-20">
@@ -12,12 +12,16 @@ const Navbar = () => {
           <h1 className="text-white">Home</h1>
           {/* HOVER BUTTON */}
           <div className="dropdown dropdown-hover">
-            <div tabIndex={0} role="button" className="btn m-1">
-              Hover
+            <div
+              tabIndex={0}
+              role="button"
+              className="m-1 flex items-center text-white gap-1"
+            >
+              Service <FaAngleDown />
             </div>
             <ul
               tabIndex={0}
-              className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
+              className="dropdown-content menu bg-white rounded-box z-1 w-52 p-2 shadow-sm"
             >
               <li>
                 <a>Item 1</a>
@@ -29,12 +33,16 @@ const Navbar = () => {
           </div>
           {/* HOVER BUTTON 2 */}
           <div className="dropdown dropdown-hover">
-            <div tabIndex={0} role="button" className="btn m-1">
-              Hover
+            <div
+              tabIndex={0}
+              role="button"
+              className="m-1 flex items-center text-white gap-1"
+            >
+              User Guide <FaAngleDown />
             </div>
             <ul
               tabIndex={0}
-              className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
+              className="dropdown-content menu bg-white rounded-box z-1 w-52 p-2 shadow-sm"
             >
               <li>
                 <a>Item 1</a>
