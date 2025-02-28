@@ -1,11 +1,18 @@
 import React, { useState } from "react";
 import { FaAngleDown, FaBars, FaTimes } from "react-icons/fa";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
+  };
+
+  // Sidebar animation variants
+  const sidebarVariants = {
+    open: { x: 0 },
+    closed: { x: "-100%" },
   };
 
   return (
@@ -90,78 +97,85 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Sidebar */}
-      <div
-        className={`fixed top-0 left-0 h-full w-64 bg-stone-900 transform ${
-          isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-        } transition-transform duration-300 ease-in-out sm:hidden z-50`}
-      >
-        <div className="p-4">
-          <p className="text-5xl text-purple-700 font-extrabold cursor-pointer font-madi">
-            QASH
-          </p>
-        </div>
-        <div className="flex flex-col p-4">
-          <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2 font-inter text-sm">
-            Home
-          </h1>
-          <div className="dropdown">
-            <div
-              tabIndex={0}
-              role="button"
-              className="m-1 flex items-center text-white gap-1 cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2 font-inter text-sm"
-            >
-              Services <FaAngleDown />
+      {/* Mobile Sidebar with Framer Motion */}
+      <AnimatePresence>
+        {isSidebarOpen && (
+          <motion.div
+            initial="closed"
+            animate="open"
+            exit="closed"
+            variants={sidebarVariants}
+            transition={{ type: "tween", duration: 0.3 }}
+            className="fixed top-0 left-0 h-full w-64 bg-stone-900 z-50"
+          >
+            <div className="p-4">
+              <p className="text-5xl text-purple-700 font-extrabold cursor-pointer font-madi">
+                QASH
+              </p>
             </div>
-            <ul
-              tabIndex={0}
-              className="dropdown-content menu bg-white rounded-box z-1 w-52 p-2 shadow-sm"
-            >
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Item 2</a>
-              </li>
-            </ul>
-          </div>
-          <div className="dropdown">
-            <div
-              tabIndex={0}
-              role="button"
-              className="m-1 flex items-center text-white gap-1  cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2 font-inter text-sm"
-            >
-              User Guide <FaAngleDown />
+            <div className="flex flex-col p-4">
+              <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2 font-inter text-sm">
+                Home
+              </h1>
+              <div className="dropdown">
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className="m-1 flex items-center text-white gap-1 cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2 font-inter text-sm"
+                >
+                  Services <FaAngleDown />
+                </div>
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content menu bg-white rounded-box z-1 w-52 p-2 shadow-sm"
+                >
+                  <li>
+                    <a>Item 1</a>
+                  </li>
+                  <li>
+                    <a>Item 2</a>
+                  </li>
+                </ul>
+              </div>
+              <div className="dropdown">
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className="m-1 flex items-center text-white gap-1  cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2 font-inter text-sm"
+                >
+                  User Guide <FaAngleDown />
+                </div>
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content menu bg-white rounded-box z-1 w-52 p-2 shadow-sm"
+                >
+                  <li>
+                    <a>Item 1</a>
+                  </li>
+                  <li>
+                    <a>Item 2</a>
+                  </li>
+                </ul>
+              </div>
+              <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2 font-inter text-sm">
+                Deals
+              </h1>
+              <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2 font-inter text-sm">
+                Partner Merchants
+              </h1>
+              <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2 font-inter text-sm">
+                Stories
+              </h1>
+              <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2 font-inter text-sm">
+                Careers
+              </h1>
+              <button className="bg-white px-5 py-2 font-medium rounded-xl text-black cursor-pointer hover:bg-white/85 duration-200 font-inter text-sm mt-4">
+                Download Now
+              </button>
             </div>
-            <ul
-              tabIndex={0}
-              className="dropdown-content menu bg-white rounded-box z-1 w-52 p-2 shadow-sm"
-            >
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Item 2</a>
-              </li>
-            </ul>
-          </div>
-          <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2 font-inter text-sm">
-            Deals
-          </h1>
-          <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2 font-inter text-sm">
-            Partner Merchants
-          </h1>
-          <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2 font-inter text-sm">
-            Stories
-          </h1>
-          <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2 font-inter text-sm">
-            Careers
-          </h1>
-          <button className="bg-white px-5 py-2 font-medium rounded-xl text-black cursor-pointer hover:bg-white/85 duration-200 font-inter text-sm mt-4">
-            Download Now
-          </button>
-        </div>
-      </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
