@@ -2,7 +2,7 @@ import React from "react";
 import { FaAngleDown } from "react-icons/fa";
 const Navbar = () => {
   return (
-    <div className="bg-stone-800 px-48 py-2">
+    <div className="bg-stone-900 px-40 py-2">
       <div className="flex items-center justify-between">
         <div>
           {/* TEXT LOGO */}
@@ -10,16 +10,18 @@ const Navbar = () => {
             QASH
           </p>
         </div>
-        <div className="flex items-center gap-5">
-          <h1 className="text-white cursor-pointer">Home</h1>
+        <div className="flex items-center gap-3">
+          <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2">
+            Home
+          </h1>
           {/* HOVER BUTTON */}
           <div className="dropdown dropdown-hover">
             <div
               tabIndex={0}
               role="button"
-              className="m-1 flex items-center text-white gap-1 cursor-pointer"
+              className="m-1 flex items-center text-white gap-1 cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2"
             >
-              Service <FaAngleDown />
+              Services <FaAngleDown />
             </div>
             <ul
               tabIndex={0}
@@ -38,7 +40,7 @@ const Navbar = () => {
             <div
               tabIndex={0}
               role="button"
-              className="m-1 flex items-center text-white gap-1 cursor-pointer"
+              className="m-1 flex items-center text-white gap-1  cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2"
             >
               User Guide <FaAngleDown />
             </div>
@@ -54,10 +56,18 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <h1 className="text-white cursor-pointer">Deals</h1>
-          <h1 className="text-white cursor-pointer">Partner Merchants</h1>
-          <h1 className="text-white cursor-pointer">Stories</h1>
-          <h1 className="text-white cursor-pointer">Careers</h1>
+          <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2">
+            Deals
+          </h1>
+          <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2">
+            Partner Merchants
+          </h1>
+          <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2">
+            Stories
+          </h1>
+          <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2">
+            Careers
+          </h1>
           <button className="bg-white px-5 py-2 font-medium rounded-xl text-black cursor-pointer hover:bg-white/85 duration-200">
             Download Now
           </button>
