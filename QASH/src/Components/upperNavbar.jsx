@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const upperNavbar = () => {
-  return (
-    <div>upperNavbar</div>
-  )
-}
+  return <div>upperNavbar</div>;
+};
 
-export default upperNavbar
+export default upperNavbar;
