@@ -1,9 +1,12 @@
-import React from 'react'
-
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./Components/Navbar";
 const App = () => {
-  return (
-    <div>App</div>
-  )
-}
+  return;
+  <Router>
+    <Navbar/>
+    <Routes></Routes>
+  </Router>;
+};
 
-export default App
+export default App;
