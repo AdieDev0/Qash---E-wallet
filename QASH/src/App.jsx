@@ -10,7 +10,9 @@ const App = () => {
   return (
     <Router>
       <Mini />
-      <Navbar />
+      <div className="top-0 sticky z-50">
+        <Navbar />
+      </div>
       <ThemeToggle /> {/* ✅ Always visible in every page */}
       <Routes>
         <Route path="/" element={<Home />} />
