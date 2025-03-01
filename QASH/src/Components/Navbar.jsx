@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaAngleDown, FaBars, FaTimes } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -34,9 +35,12 @@ const Navbar = () => {
 
         {/* Desktop Navbar */}
         <div className="hidden sm:flex items-center gap-3">
-          <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-300 p-2 font-inter text-sm">
-            Home
-          </h1>
+          <NavLink to="/">
+            <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-300 p-2 font-inter text-sm">
+              Home
+            </h1>
+          </NavLink>
+
           {/* HOVER BUTTON */}
           <div className="dropdown dropdown-hover">
             <div
