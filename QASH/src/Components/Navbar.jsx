@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-stone-900 px-4 sm:px-40 py-2">
+    <div className="bg-stone-900 px-4 sm:px-40 py-2 stick top-0 z-50">
       <div className="flex items-center justify-between">
         <div>
           {/* TEXT LOGO */}
