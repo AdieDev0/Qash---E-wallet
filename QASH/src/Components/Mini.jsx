@@ -16,12 +16,37 @@ const Mini = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
-        {/* Left Empty Space (for alignment) */}
-        <div className="flex-1"></div>
+      <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center px-4 sm:px-6 lg:px-8">
+        {/* Mobile Dropdown Button */}
+        <div className="sm:hidden w-full flex justify-between items-center">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={toggleMenu}
+            className="text-white font-medium text-sm cursor-pointer"
+          >
+            {isMenuOpen ? <FiX className="text-lg" /> : <FiMenu className="text-lg" />}
+          </motion.button>
+          <div className="flex gap-6 items-center">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="text-white font-medium text-sm flex items-center gap-1 hover:text-gray-300 cursor-pointer"
+            >
+              Help & Support <FiExternalLink className="text-green-500 text-xs" />
+            </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="text-white font-medium text-sm flex items-center gap-1 hover:text-gray-300 cursor-pointer"
+            >
+              <FiSearch className="text-lg" /> Search
+            </motion.button>
+          </div>
+        </div>
 
-        {/* Centered Section */}
-        <div className="hidden sm:flex gap-6">
+        {/* Centered Section (Desktop) */}
+        <div className="hidden sm:flex gap-6 mx-auto">
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -41,20 +66,8 @@ const Mini = () => {
           ))}
         </div>
 
-        {/* Mobile Dropdown Button */}
-        <div className="sm:hidden">
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={toggleMenu}
-            className="text-white font-medium text-sm cursor-pointer"
-          >
-            {isMenuOpen ? <FiX className="text-lg" /> : <FiMenu className="text-lg" />}
-          </motion.button>
-        </div>
-
-        {/* Right Section */}
-        <div className="flex gap-6 items-center">
+        {/* Right Section (Desktop) */}
+        <div className="hidden sm:flex gap-6 items-center">
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
