@@ -34,7 +34,7 @@ const Navbar = () => {
 
         {/* Desktop Navbar */}
         <div className="hidden sm:flex items-center gap-3">
-          <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2 font-inter text-sm">
+          <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-300 p-2 font-inter text-sm">
             Home
           </h1>
           {/* HOVER BUTTON */}
@@ -42,7 +42,7 @@ const Navbar = () => {
             <div
               tabIndex={0}
               role="button"
-              className="m-1 flex items-center text-white gap-1 cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2 font-inter text-sm"
+              className="m-1 flex items-center text-white gap-1 cursor-pointer rounded-md hover:bg-stone-500 duration-300 p-2 font-inter text-sm"
             >
               Services <FaAngleDown />
             </div>
@@ -63,7 +63,7 @@ const Navbar = () => {
             <div
               tabIndex={0}
               role="button"
-              className="m-1 flex items-center text-white gap-1  cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2 font-inter text-sm"
+              className="m-1 flex items-center text-white gap-1  cursor-pointer rounded-md hover:bg-stone-500 duration-300 p-2 font-inter text-sm"
             >
               User Guide <FaAngleDown />
             </div>
@@ -79,19 +79,19 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2 font-inter text-sm">
+          <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-300 p-2 font-inter text-sm">
             Deals
           </h1>
-          <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2 font-inter text-sm">
+          <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-300 p-2 font-inter text-sm">
             Partner Merchants
           </h1>
-          <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2 font-inter text-sm">
+          <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-300 p-2 font-inter text-sm">
             Stories
           </h1>
-          <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2 font-inter text-sm">
+          <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-300 p-2 font-inter text-sm">
             Careers
           </h1>
-          <button className="bg-white px-5 py-2 font-medium rounded-xl text-black cursor-pointer hover:bg-white/85 duration-200 font-inter text-sm">
+          <button className="bg-white px-5 py-2 font-medium rounded-xl text-black cursor-pointer hover:bg-white/85 duration-300 font-inter text-sm">
             Download Now
           </button>
         </div>
@@ -114,14 +114,14 @@ const Navbar = () => {
               </p>
             </div>
             <div className="flex flex-col p-4">
-              <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2 font-inter text-sm">
+              <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-300 p-2 font-inter text-sm">
                 Home
               </h1>
               <div className="dropdown">
                 <div
                   tabIndex={0}
                   role="button"
-                  className="m-1 flex items-center text-white gap-1 cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2 font-inter text-sm"
+                  className="m-1 flex items-center text-white gap-1 cursor-pointer rounded-md hover:bg-stone-500 duration-300 p-2 font-inter text-sm"
                 >
                   Services <FaAngleDown />
                 </div>
@@ -141,7 +141,7 @@ const Navbar = () => {
                 <div
                   tabIndex={0}
                   role="button"
-                  className="m-1 flex items-center text-white gap-1  cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2 font-inter text-sm"
+                  className="m-1 flex items-center text-white gap-1  cursor-pointer rounded-md hover:bg-stone-500 duration-300 p-2 font-inter text-sm"
                 >
                   User Guide <FaAngleDown />
                 </div>
@@ -157,19 +157,19 @@ const Navbar = () => {
                   </li>
                 </ul>
               </div>
-              <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2 font-inter text-sm">
+              <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-300 p-2 font-inter text-sm">
                 Deals
               </h1>
-              <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2 font-inter text-sm">
+              <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-300 p-2 font-inter text-sm">
                 Partner Merchants
               </h1>
-              <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2 font-inter text-sm">
+              <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-300 p-2 font-inter text-sm">
                 Stories
               </h1>
-              <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-200 p-2 font-inter text-sm">
+              <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-300 p-2 font-inter text-sm">
                 Careers
               </h1>
-              <button className="bg-white px-5 py-2 font-medium rounded-xl text-black cursor-pointer hover:bg-white/85 duration-200 font-inter text-sm mt-4">
+              <button className="bg-white px-5 py-2 font-medium rounded-xl text-black cursor-pointer hover:bg-white/85 duration-300 font-inter text-sm mt-4">
                 Download Now
               </button>
             </div>
