@@ -1,5 +1,6 @@
 import React from "react";
 import CreditCards from "../assets/Home/CreditCards.jpg";
+import ThemeToggle from "../DarkMode/ThemeToggle";
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-black opacity-80 h-full"></div>
       </div>
 
-      {/* Desktop View (unchanged) */}
+      {/* Desktop View */}
       <div className="absolute top-30 left-40 hidden lg:block">
         <p className="text-6xl font-bold font-inter text-purple-700">
           Our first credit card.
@@ -47,6 +48,11 @@ const Home = () => {
             Learn more
           </button>
         </div>
+      </div>
+
+      {/* Theme Toggle - Always at Bottom Left */}
+      <div className="fixed bottom-5 left-5 z-50">
+        <ThemeToggle />
       </div>
     </div>
   );
