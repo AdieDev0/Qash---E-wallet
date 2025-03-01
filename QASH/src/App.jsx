@@ -13,7 +13,7 @@ const App = () => {
       <div className="top-0 sticky z-50">
         <Navbar />
       </div>
-      <ThemeToggle /> {/* ✅ Always visible in every page */}
+      <ThemeToggle />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
