@@ -1,8 +1,14 @@
-import React from "react";
-import { FiSearch, FiExternalLink } from "react-icons/fi";
+import React, { useState } from "react";
+import { FiSearch, FiExternalLink, FiMenu, FiX } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 const Mini = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <motion.div
       className="bg-black text-white py-2"
@@ -15,7 +21,7 @@ const Mini = () => {
         <div className="flex-1"></div>
 
         {/* Centered Section */}
-        <div className="flex gap-6 mr-90">
+        <div className="hidden sm:flex gap-6">
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -33,6 +39,18 @@ const Mini = () => {
               {item}
             </motion.button>
           ))}
+        </div>
+
+        {/* Mobile Dropdown Button */}
+        <div className="sm:hidden">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={toggleMenu}
+            className="text-white font-medium text-sm cursor-pointer"
+          >
+            {isMenuOpen ? <FiX className="text-lg" /> : <FiMenu className="text-lg" />}
+          </motion.button>
         </div>
 
         {/* Right Section */}
@@ -53,6 +71,36 @@ const Mini = () => {
           </motion.button>
         </div>
       </div>
+
+      {/* Mobile Dropdown Menu */}
+      {isMenuOpen && (
+        <motion.div
+          className="sm:hidden bg-black text-white py-4"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+        >
+          <div className="flex flex-col items-center gap-4">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="text-green-500 font-medium text-sm cursor-pointer"
+            >
+              Qash
+            </motion.button>
+            {["Qash Bank", "Qash Business", "Qash Center"].map((item, index) => (
+              <motion.button
+                key={index}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="text-white font-medium text-sm cursor-pointer hover:text-gray-300"
+              >
+                {item}
+              </motion.button>
+            ))}
+          </div>
+        </motion.div>
+      )}
     </motion.div>
   );
 };
