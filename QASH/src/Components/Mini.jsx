@@ -25,7 +25,11 @@ const Mini = () => {
             onClick={toggleMenu}
             className="text-white font-medium text-sm cursor-pointer"
           >
-            {isMenuOpen ? <FiX className="text-lg" /> : <FiMenu className="text-lg" />}
+            {isMenuOpen ? (
+              <FiX className="text-lg" />
+            ) : (
+              <FiMenu className="text-lg" />
+            )}
           </motion.button>
           <div className="flex gap-6 items-center">
             <motion.button
@@ -33,7 +37,8 @@ const Mini = () => {
               whileTap={{ scale: 0.95 }}
               className="text-white font-medium text-sm flex items-center gap-1 hover:text-gray-300 cursor-pointer"
             >
-              Help & Support <FiExternalLink className="text-green-500 text-xs" />
+              Help & Support{" "}
+              <FiExternalLink className="text-green-500 text-xs" />
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -101,16 +106,18 @@ const Mini = () => {
             >
               Qash
             </motion.button>
-            {["Qash Bank", "Qash Business", "Qash Center"].map((item, index) => (
-              <motion.button
-                key={index}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="text-white font-medium text-sm cursor-pointer hover:text-gray-300"
-              >
-                {item}
-              </motion.button>
-            ))}
+            {["Qash Bank", "Qash Business", "Qash Center"].map(
+              (item, index) => (
+                <motion.button
+                  key={index}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="text-white font-medium text-sm cursor-pointer hover:text-gray-300"
+                >
+                  {item}
+                </motion.button>
+              )
+            )}
           </div>
         </motion.div>
       )}
