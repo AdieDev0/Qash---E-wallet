@@ -1,13 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import StickyNavbar from "./Components/StickyNavbar";
-import upperNavbar from "./Components/upperNavbar";
+import Navbar from "./Components/navbar";
+import Footer from "./Components/Footer";
+import Mini from "./Components/Mini";
 const App = () => {
   return (
     <Router>
-      <upperNavbar />
-      <StickyNavbar />
+      <Mini />
+      <Navbar />
       <Routes></Routes>
+      <Footer />
     </Router>
   );
 };
