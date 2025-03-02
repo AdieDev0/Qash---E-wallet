@@ -1,6 +1,10 @@
 import React from "react";
 import CreditCards from "../assets/Home/CreditCards.jpg";
 import ThemeToggle from "../DarkMode/ThemeToggle";
+import Percentage from "../assets/Home/Percentage.png";
+import Person from "../assets/Home/person.png";
+import Protect from "../assets/Home/Protect.png";
+import Start from "../assets/Home/Start.png";
 
 const Home = () => {
   return (
@@ -62,9 +66,9 @@ const Home = () => {
           <p>Meet your new all-in-one digital bank app</p>
           <div>
             <div>
-              <img src="" alt="" />
-              <h1></h1>
-              <p></p>
+              <img src={Percentage} alt=""  className="size-20"/>
+              <h1>Transer</h1>
+              <p>Instantly send money through QR code or phone number</p>
             </div>
           </div>
         </div>
