@@ -33,6 +33,7 @@ const inviCard = [
 const Home = () => {
   return (
     <>
+    {/* Top Context */}
       <div className="relative w-full">
         <div className="relative w-full h-[600px] sm:h-[500px] md:h-[550px]">
           <img
@@ -149,11 +150,18 @@ const Home = () => {
             ))}
           </div>
 
-          <h1 className="text-center font-bold font-madi text-4xl text-violet-600 hover:scale-105 duration-200 cursor-pointer mt-10">
+          <motion.h1
+            className="text-center font-bold font-madi text-4xl text-violet-600 hover:scale-105 duration-200 cursor-pointer mt-10"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             AND MORE
-          </h1>
+          </motion.h1>
         </div>
       </div>
+
+      {/* FlexBox */}
     </>
   );
 };
