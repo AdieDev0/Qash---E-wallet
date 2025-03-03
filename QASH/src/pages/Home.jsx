@@ -6,10 +6,33 @@ import Person from "../assets/Home/person.png";
 import Protect from "../assets/Home/Protect.png";
 import Start from "../assets/Home/Start.png";
 
+const inviCard = [
+  {
+    img: Percentage,
+    name: "Transfer",
+    para: "Instantly send money through QR code or phone number",
+  },
+  {
+    img: Protect,
+    name: "Shop",
+    para: "Whether it be crypto or stocks, you can grow your money how you like it",
+  },
+  {
+    img: Person,
+    name: "Personalized",
+    para: "Shop and withdraw cash with a card that has your @username",
+  },
+  {
+    img: Start,
+    name: "Easy to start",
+    para: "Sign up with just 1 ID and no minimum balance",
+  },
+];
+
 const Home = () => {
   return (
     <>
-      <div className="relative w-full min-h-screen">
+      <div className="relative w-full">
         <div className="relative w-full h-[600px] sm:h-[500px] md:h-[550px]">
           <img
             src={CreditCards}
@@ -61,15 +84,27 @@ const Home = () => {
         </div>
       </div>
 
-      <div>
+      <div className="bg-stone-900 p-20">
         <div>
-          <p>Meet your new all-in-one digital bank app</p>
-          <div>
-            <div>
-              <img src={Percentage} alt=""  className="size-20"/>
-              <h1>Transer</h1>
-              <p>Instantly send money through QR code or phone number</p>
-            </div>
+          <p className="text-6xl font-bold text-violet-500 font-inter text-center w-3xl mb-16 mx-auto">
+            Meet your new all-in-one digital bank app
+          </p>
+          <div className="flex gap-5">
+            {inviCard.map((inviCard, index) => (
+              <div key={index} className="grid gap-3">
+                <img
+                  src={inviCard.img}
+                  alt={inviCard.name}
+                  className="size-40 mx-auto"
+                />
+                <h1 className="text-center text-violet-600 font-bold font-inter text-4xl">
+                  {inviCard.name}
+                </h1>
+                <p className="text-center text-xl font-inter">
+                  {inviCard.para}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
