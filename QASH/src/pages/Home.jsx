@@ -84,23 +84,23 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-stone-900 p-20">
+      <div className="bg-stone-900 p-4 sm:p-10 md:p-20">
         <div>
-          <p className="text-6xl font-bold text-violet-500 font-inter text-center w-3xl mb-16 mx-auto">
+          <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-violet-500 font-inter text-center max-w-3xl mb-8 sm:mb-12 md:mb-16 mx-auto">
             Meet your new all-in-one digital bank app
           </p>
-          <div className="flex gap-5">
+          <div className="flex flex-col sm:flex-row gap-5">
             {inviCard.map((inviCard, index) => (
               <div key={index} className="grid gap-3">
                 <img
                   src={inviCard.img}
                   alt={inviCard.name}
-                  className="size-40 mx-auto"
+                  className="size-24 sm:size-32 md:size-40 mx-auto"
                 />
-                <h1 className="text-center text-violet-600 font-bold font-inter text-4xl">
+                <h1 className="text-center text-violet-600 font-bold font-inter text-2xl sm:text-3xl md:text-4xl">
                   {inviCard.name}
                 </h1>
-                <p className="text-center text-xl font-inter">
+                <p className="text-center text-base sm:text-lg md:text-xl font-inter">
                   {inviCard.para}
                 </p>
               </div>
