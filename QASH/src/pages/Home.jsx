@@ -148,6 +148,10 @@ const Home = () => {
               </motion.div>
             ))}
           </div>
+
+          <h1 className="text-center font-bold font-madi text-4xl text-violet-600 hover:scale-105 duration-200 cursor-pointer mt-10">
+            AND MORE
+          </h1>
         </div>
       </div>
     </>
