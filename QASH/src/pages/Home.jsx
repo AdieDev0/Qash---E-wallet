@@ -205,7 +205,7 @@ const Home = () => {
 
         {/* CARD CONTEXT */}
         <motion.div
-          className="px-4 md:px-16"
+          className="px-4 md:px-32"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -301,7 +301,7 @@ const Home = () => {
                 variants={cardVariants}
                 whileHover="hover"
               >
-                <div className="grid gap-5 w-full md:w-60">
+                <div className="grid gap-5 w-full">
                   <p className="text-black/80 font-bold font-inter text-2xl">
                     Zero to ₱30,000 in seconds
                   </p>
@@ -318,11 +318,11 @@ const Home = () => {
               </motion.div>
 
               <motion.div
-                className="flex flex-col md:flex-row justify-between bg-white/80 rounded-3xl shadow-md p-10"
+                className="flex flex-col md:flex-row gap-10 bg-white/80 rounded-3xl shadow-md p-10"
                 variants={cardVariants}
                 whileHover="hover"
               >
-                <div className="grid gap-5 w-full md:w-60">
+                <div className="grid gap-5 w-full">
                   <p className="text-black/80 font-bold font-inter text-2xl">
                     Did you know you can send money using @usernames?
                   </p>
