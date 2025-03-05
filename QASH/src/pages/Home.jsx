@@ -6,6 +6,9 @@ import Percentage from "../assets/Home/Percentage.png";
 import Person from "../assets/Home/person.png";
 import Protect from "../assets/Home/Protect.png";
 import Start from "../assets/Home/Start.png";
+import CredCard from "../assets/Home/CredCard.png";
+import ModelCard from "../assets/Home/ModelCard.png";
+import FloatCard from "../assets/Home/FloatCard.png";
 
 const inviCard = [
   {
@@ -54,12 +57,12 @@ const Home = () => {
           <p className="text-6xl font-bold font-inter text-purple-400">
             Our first credit card.
           </p>
-          <p className="text-4xl font-inter text-white mt-3">
+          <p className="text-4xl font-inter text-gray-200 mt-3">
             The last one you'll ever need for cash back
           </p>
           <div className="flex gap-5 mt-10">
             <motion.button
-              className="text-xl bg-purple-700 py-5 px-14 rounded-3xl text-white font-semibold font-inter hover:scale-110 duration-200 cursor-pointer"
+              className="text-xl bg-purple-700 py-5 px-14 rounded-3xl text-gray-200 font-semibold font-inter hover:scale-110 duration-200 cursor-pointer"
               whileHover={{ scale: 1.1 }} // Scale up on hover
               whileTap={{ scale: 0.9 }} // Scale down on click
             >
@@ -85,12 +88,12 @@ const Home = () => {
           <p className="text-3xl sm:text-4xl font-bold font-inter text-purple-400">
             Our first credit card.
           </p>
-          <p className="text-lg sm:text-2xl font-inter text-white mt-3">
+          <p className="text-lg sm:text-2xl font-inter text-gray-200 mt-3">
             The last one you'll ever need for cash back
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center">
             <motion.button
-              className="w-40 text-lg sm:text-xl bg-purple-700 py-3 sm:py-4 rounded-3xl text-white font-semibold font-inter hover:scale-105 duration-200 cursor-pointer"
+              className="w-40 text-lg sm:text-xl bg-purple-700 py-3 sm:py-4 rounded-3xl text-gray-200 font-semibold font-inter hover:scale-105 duration-200 cursor-pointer"
               whileHover={{ scale: 1.05 }} // Scale up on hover
               whileTap={{ scale: 0.95 }} // Scale down on click
             >
@@ -162,6 +165,82 @@ const Home = () => {
       </div>
 
       {/* FlexBox */}
+      <div className="bg-stone-800 p-30">
+        <div className="text-center grid gap-3 mb-20">
+          <h5 className="text-gray-200 font-semibold font-inter text-2xl">
+            WHAT"S NEW
+          </h5>
+          <h1 className="text-7xl text-purple-400 font-semibold font-inter">
+            Your Money. Your Way.
+          </h1>
+        </div>
+
+        {/* CARD CONTEXT */}
+        <div className="px-16">
+          {/* 1st SECOND cards */}
+
+          <div>
+            <div className="flex gap-5 my-5">
+              {/* 1st */}
+              <div className="items-center bg-orange-700 px-10 py-12 rounded-3xl w-lg shadow-md">
+                <div className="grid gap-5 mb-10">
+                  <p className="text-2xl font-bold font-inter text-gray-200">
+                    Get your very own physical Qash card?
+                  </p>
+                  <p className="font-inter text-gray-200 font-semibold">
+                    Shop to your heart’s delight or withdraw cash with a cool
+                    black card with your @username on it
+                  </p>
+                  <p className="font-inter text-gray-200 font-semibold">
+                    Want a FREE Qash card? Click here to learn more.
+                  </p>
+                </div>
+
+                <button className="px-10 py-5 bg-purple-700 mx-auto text-gray-200 font-bold font-inter rounded-xl hover:bg-purple-600 duration-200 cursor-pointer">
+                  Get a Qash card
+                </button>
+                <img src={CredCard} alt="" className="w-96 mt-10" />
+              </div>
+              {/* 2nd */}
+              <div className="items-center bg-emerald-500 px-10 pt-12 rounded-3xl w-2xl shadow-md">
+                <div className="grid gap-5 mb-10">
+                  <p className="text-2xl font-bold font-inter text-black/80">
+                    It’s easy to get banked with Qash
+                  </p>
+                  <p className="font-inter text-black/80 font-semibold">
+                    Maya gives the safety of a bank and convenience of a wallet.
+                  </p>
+                </div>
+                <button className="px-10 py-5 bg-white mx-auto text-black/80 font-bold font-inter rounded-xl hover:bg-white/90 duration-200 cursor-pointer">
+                  Get banked
+                </button>
+                <img src={ModelCard} alt="" className="w-full mt-10" />
+              </div>
+            </div>
+            <div className="flex gap-10 items-center bg-emerald-500 px-10 pt-12 rounded-3xl w-full shadow-md">
+              <div className="grid gap-5 mb-10">
+                <p className="text-2xl font-bold font-inter text-black/80">
+                  Landers Cashback Everywhere Credit Card by Maya It’s easy to
+                  get banked with Qash
+                </p>
+                <p className="font-inter text-black/80 font-semibold">
+                  Enjoy having both a credit card and membership in one to get
+                  all the benefits of being a Landers member and all the perks
+                  of a credit card.
+                </p>
+                <div>
+                  <button className="px-10 py-5 bg-white mx-auto text-black/80 font-bold font-inter rounded-xl hover:bg-white/90 duration-200 cursor-pointer">
+                    Learn More
+                  </button>
+                </div>
+              </div>
+              <div>
+                <img src={FloatCard} alt="" className="w-full mt-10" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

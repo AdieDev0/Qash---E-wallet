@@ -12,7 +12,7 @@ import { BsQrCode } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className="bg-stone-900 text-violet-400 py-12 border-t-4 border-violet-600">
+    <footer className="bg-stone-800 text-violet-400 py-12 border-t-4 border-violet-600">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 px-6">
         {/* Logo */}
         <div className="text-center md:text-left">
