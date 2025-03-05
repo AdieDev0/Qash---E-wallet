@@ -52,8 +52,6 @@ const cardVariants = {
   hover: { scale: 1.02, transition: { duration: 0.3 } },
 };
 
-
-
 const Home = () => {
   return (
     <>
@@ -219,7 +217,7 @@ const Home = () => {
             <div className="flex flex-col md:flex-row gap-5 my-5">
               {/* 1st Card */}
               <motion.div
-                className="items-center bg-orange-700 px-10 py-12 rounded-3xl w-full md:w-1/2 shadow-md"
+                className="items-center bg-gradient-to-tr from-orange-500 via-orange-300 px-10 py-12 rounded-3xl w-full md:w-1/2 shadow-md"
                 variants={cardVariants}
                 whileHover="hover"
               >
@@ -243,7 +241,7 @@ const Home = () => {
 
               {/* 2nd Card */}
               <motion.div
-                className="items-center bg-emerald-500 px-10 pt-12 rounded-3xl w-full md:w-1/2 shadow-md"
+                className="items-center bg-gradient-to-tr from-emerald-500 via-emerald-300 px-10 pt-12 rounded-3xl w-full md:w-1/2 shadow-md"
                 variants={cardVariants}
                 whileHover="hover"
               >
@@ -264,7 +262,7 @@ const Home = () => {
 
             {/* 3rd Card */}
             <motion.div
-              className="flex flex-col md:flex-row gap-10 items-center bg-emerald-500 px-10 rounded-3xl w-full shadow-md my-5"
+              className="flex flex-col md:flex-row gap-10 items-center bg-gradient-to-tr from-fuchsia-400 via-fuchsia-300 px-10 rounded-3xl w-full shadow-md my-5"
               variants={cardVariants}
               whileHover="hover"
             >
@@ -301,7 +299,7 @@ const Home = () => {
               variants={itemVariants}
             >
               <motion.div
-                className="flex flex-col md:flex-row justify-between bg-white/80 rounded-3xl shadow-md p-10"
+                className="flex flex-col md:flex-row justify-between bg-gradient-to-tr from-gray-300 via-gray-200 rounded-3xl shadow-md p-10"
                 variants={cardVariants}
                 whileHover="hover"
               >
@@ -322,7 +320,7 @@ const Home = () => {
               </motion.div>
 
               <motion.div
-                className="flex flex-col md:flex-row gap-10 bg-white/80 rounded-3xl shadow-md p-10"
+                className="flex flex-col md:flex-row gap-10 bg-gradient-to-tr from-gray-100 via-gray-200 rounded-3xl shadow-md p-10"
                 variants={cardVariants}
                 whileHover="hover"
               >
@@ -347,7 +345,7 @@ const Home = () => {
 
             {/* Second Card */}
             <motion.div
-              className="bg-blue-700 p-10 rounded-3xl w-full md:w-1/3 shadow-md grid gap-5"
+              className="bg-gradient-to-tr from-blue-300 via-blue-400 p-10 rounded-3xl w-full md:w-1/3 shadow-md grid gap-5"
               variants={cardVariants}
               whileHover="hover"
             >
@@ -373,111 +371,111 @@ const Home = () => {
 
       {/* Perks */}
       <div className="min-h-screen bg-gradient-to-br from-stone-800 to-stone-900 py-20 px-6 md:px-40">
-      {/* Header Section */}
-      <motion.div
-        className="flex flex-col md:flex-row items-center gap-6 md:gap-10 mb-20"
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-      >
-        <motion.img
-          src={gift}
-          alt="Gift"
-          className="w-40 md:w-60"
-          variants={itemVariants}
-        />
+        {/* Header Section */}
         <motion.div
-          className="flex-1 text-center md:text-left"
-          variants={itemVariants}
+          className="flex flex-col md:flex-row items-center gap-6 md:gap-10 mb-20"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
         >
-          <h1 className="font-bold text-3xl md:text-4xl text-purple-400 mb-4">
-            Perks all the way, baby!
-          </h1>
-          <p className="font-medium text-lg md:text-xl text-white/80">
-            Earn cashbacks when you cash-in, transfer, refer a friend, and buy
-            gaming credits.
-          </p>
-        </motion.div>
-        <motion.button
-          className="bg-purple-600 hover:bg-purple-700 duration-200 font-bold font-inter text-lg md:text-xl w-full md:w-72 py-4 md:py-5 rounded-2xl cursor-pointer"
-          variants={itemVariants}
-          whileHover={{ scale: 1.05 }}
-        >
-          Get the App
-        </motion.button>
-      </motion.div>
-
-      {/* Cards Section */}
-      <motion.div
-        className="flex flex-col md:flex-row gap-6"
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-      >
-        {/* 1st Card */}
-        <motion.div
-          className="p-6 md:p-10 bg-purple-900 rounded-3xl flex-1"
-          variants={cardVariants}
-          whileHover="hover"
-        >
-          <div className="flex gap-4 items-center mb-6">
-            <FaCheckCircle className="text-green-400 size-6 md:size-7" />
-            <p className="font-bold text-xl text-gray-200">
-              Get Banked with Maya with these exclusive deals to make the switch
-              painless
+          <motion.img
+            src={gift}
+            alt="Gift"
+            className="w-40 md:w-60"
+            variants={itemVariants}
+          />
+          <motion.div
+            className="flex-1 text-center md:text-left"
+            variants={itemVariants}
+          >
+            <h1 className="font-bold text-3xl md:text-4xl text-purple-400 mb-4">
+              Perks all the way, baby!
+            </h1>
+            <p className="font-medium text-lg md:text-xl text-white/80">
+              Earn cashbacks when you cash-in, transfer, refer a friend, and buy
+              gaming credits.
             </p>
-          </div>
-          <ul className="space-y-3 mb-6">
-            <li className="text-gray-200 font-medium text-md">
-              • Up to 1x FREE cash in via InstaPay
-            </li>
-            <li className="text-gray-200 font-medium text-md">
-              • Up to 1x FREE InstaPay transfer for 2 months
-            </li>
-            <li className="text-gray-200 font-medium text-md">
-              • Up to 15% interest p.a. with Maya Savings
-            </li>
-            <li className="text-gray-200 font-medium text-md">
-              • FREE Maya card
-            </li>
-          </ul>
-          <p className="italic text-gray-400 text-sm">
-            Terms and conditions apply
-          </p>
+          </motion.div>
+          <motion.button
+            className="bg-purple-600 hover:bg-purple-700 duration-200 font-bold font-inter text-lg md:text-xl w-full md:w-72 py-4 md:py-5 rounded-2xl cursor-pointer"
+            variants={itemVariants}
+            whileHover={{ scale: 1.05 }}
+          >
+            Get the App
+          </motion.button>
         </motion.div>
 
-        {/* 2nd Card */}
+        {/* Cards Section */}
         <motion.div
-          className="p-6 md:p-10 bg-purple-900 rounded-3xl flex-1"
-          variants={cardVariants}
-          whileHover="hover"
+          className="flex flex-col md:flex-row gap-6"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
         >
-          <div className="flex gap-4 items-center mb-6">
-            <FaCheckCircle className="text-green-400 size-6 md:size-7" />
-            <p className="font-bold text-xl text-gray-200">
-              Earn ₱50 for every friend that you get banked with Maya.
+          {/* 1st Card */}
+          <motion.div
+            className="p-6 md:p-10 bg-gradient-to-tr from-purple-500 via-purple-700 to-purple-950 from- rounded-3xl flex-1"
+            variants={cardVariants}
+            whileHover="hover"
+          >
+            <div className="flex gap-4 items-center mb-6">
+              <FaCheckCircle className="text-green-400 size-6 md:size-7" />
+              <p className="font-bold text-xl text-gray-200">
+                Get Banked with Maya with these exclusive deals to make the
+                switch painless
+              </p>
+            </div>
+            <ul className="space-y-3 mb-6">
+              <li className="text-gray-200 font-medium text-md">
+                • Up to 1x FREE cash in via InstaPay
+              </li>
+              <li className="text-gray-200 font-medium text-md">
+                • Up to 1x FREE InstaPay transfer for 2 months
+              </li>
+              <li className="text-gray-200 font-medium text-md">
+                • Up to 15% interest p.a. with Maya Savings
+              </li>
+              <li className="text-gray-200 font-medium text-md">
+                • FREE Maya card
+              </li>
+            </ul>
+            <p className="italic text-gray-100 text-sm">
+              Terms and conditions apply
             </p>
-          </div>
-          <div className="space-y-3 mb-6">
-            <p className="text-gray-200 font-medium text-md">
-              You can even earn up to ₱15,000 when you refer more than 30!
+          </motion.div>
+
+          {/* 2nd Card */}
+          <motion.div
+            className="p-6 md:p-10 bg-gradient-to-tr from-purple-500 via-purple-700 to-purple-950 rounded-3xl flex-1"
+            variants={cardVariants}
+            whileHover="hover"
+          >
+            <div className="flex gap-4 items-center mb-6">
+              <FaCheckCircle className="text-green-400 size-6 md:size-7" />
+              <p className="font-bold text-xl text-gray-200">
+                Earn ₱50 for every friend that you get banked with Maya.
+              </p>
+            </div>
+            <div className="space-y-3 mb-6">
+              <p className="text-gray-200 font-medium text-md">
+                You can even earn up to ₱15,000 when you refer more than 30!
+              </p>
+              <p className="text-gray-200 font-medium text-md">
+                a. Achieve 30 referrals - Get ₱2,500
+              </p>
+              <p className="text-gray-200 font-medium text-md">
+                b. Achieve 50 - Get ₱3,000
+              </p>
+              <p className="text-gray-200 font-medium text-md">
+                c. Achieve 100 - Get ₱9,000
+              </p>
+            </div>
+            <p className="italic text-gray-100 text-sm">
+              Terms and conditions apply
             </p>
-            <p className="text-gray-200 font-medium text-md">
-              a. Achieve 30 referrals - Get ₱2,500
-            </p>
-            <p className="text-gray-200 font-medium text-md">
-              b. Achieve 50 - Get ₱3,000
-            </p>
-            <p className="text-gray-200 font-medium text-md">
-              c. Achieve 100 - Get ₱9,000
-            </p>
-          </div>
-          <p className="italic text-gray-400 text-sm">
-            Terms and conditions apply
-          </p>
+          </motion.div>
         </motion.div>
-      </motion.div>
-    </div>
+      </div>
     </>
   );
 };
