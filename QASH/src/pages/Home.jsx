@@ -177,8 +177,7 @@ const Home = () => {
 
         {/* CARD CONTEXT */}
         <div className="px-16">
-          {/* 1st SECOND cards */}
-
+          {/* 1st FlexBox Cards */}
           <div>
             <div className="flex gap-5 my-5">
               {/* 1st */}
@@ -217,7 +216,7 @@ const Home = () => {
                 <img src={ModelCard} alt="" className="w-full mt-10" />
               </div>
             </div>
-            <div className="flex gap-10 items-center bg-emerald-500 px-10 pt-12 rounded-3xl w-full shadow-md">
+            <div className="flex gap-10 items-center bg-emerald-500 px-10 rounded-3xl w-full shadow-md">
               <div className="grid gap-5 mb-10">
                 <p className="text-2xl font-bold font-inter text-black/80">
                   Landers Cashback Everywhere Credit Card by Maya It’s easy to
@@ -238,6 +237,10 @@ const Home = () => {
                 <img src={FloatCard} alt="" className="w-full mt-10" />
               </div>
             </div>
+          </div>
+          {/* 2nd FlexBox Cards */}
+          <div>
+            <div></div>
           </div>
         </div>
       </div>
