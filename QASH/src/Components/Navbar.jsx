@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between">
         <div>
           {/* TEXT LOGO */}
-          <p className="text-5xl text-purple-700 font-extrabold cursor-pointer font-madi">
+          <p className="text-5xl text-purple-400 font-extrabold cursor-pointer font-madi">
             QASH
           </p>
         </div>

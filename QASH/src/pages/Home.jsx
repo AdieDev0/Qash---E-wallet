@@ -33,7 +33,7 @@ const inviCard = [
 const Home = () => {
   return (
     <>
-    {/* Top Context */}
+      {/* Top Context */}
       <div className="relative w-full">
         <div className="relative w-full h-[600px] sm:h-[500px] md:h-[550px]">
           <img
@@ -51,7 +51,7 @@ const Home = () => {
           animate={{ opacity: 1, y: 0 }} // Animate to this state
           transition={{ duration: 1 }} // Animation duration
         >
-          <p className="text-6xl font-bold font-inter text-purple-700">
+          <p className="text-6xl font-bold font-inter text-purple-400">
             Our first credit card.
           </p>
           <p className="text-4xl font-inter text-white mt-3">
@@ -66,7 +66,7 @@ const Home = () => {
               Sign up
             </motion.button>
             <motion.button
-              className="text-xl border border-purple-700 rounded-3xl text-purple-700 font-semibold font-inter py-5 px-14 hover:scale-110 duration-200 cursor-pointer"
+              className="text-xl border border-purple-700 rounded-3xl text-purple-400 font-semibold font-inter py-5 px-14 hover:scale-110 duration-200 cursor-pointer"
               whileHover={{ scale: 1.1 }} // Scale up on hover
               whileTap={{ scale: 0.9 }} // Scale down on click
             >
@@ -82,7 +82,7 @@ const Home = () => {
           animate={{ opacity: 1, y: 0 }} // Animate to this state
           transition={{ duration: 1 }} // Animation duration
         >
-          <p className="text-3xl sm:text-4xl font-bold font-inter text-purple-700">
+          <p className="text-3xl sm:text-4xl font-bold font-inter text-purple-400">
             Our first credit card.
           </p>
           <p className="text-lg sm:text-2xl font-inter text-white mt-3">
@@ -97,7 +97,7 @@ const Home = () => {
               Sign up
             </motion.button>
             <motion.button
-              className="w-40 text-lg sm:text-xl border border-purple-700 rounded-3xl text-purple-700 font-semibold font-inter py-3 sm:py-4 hover:scale-105 duration-200 cursor-pointer"
+              className="w-40 text-lg sm:text-xl border border-purple-700 rounded-3xl text-purple-400 font-semibold font-inter py-3 sm:py-4 hover:scale-105 duration-200 cursor-pointer"
               whileHover={{ scale: 1.05 }} // Scale up on hover
               whileTap={{ scale: 0.95 }} // Scale down on click
             >
@@ -113,10 +113,10 @@ const Home = () => {
       </div>
 
       {/* Cards Section */}
-      <div className="bg-stone-900 p-4 sm:p-10 md:p-20">
+      <div className="bg-stone-800 p-4 sm:p-10 md:p-20">
         <div>
           <motion.p
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-violet-500 font-inter text-center max-w-3xl mb-8 sm:mb-12 md:mb-16 mx-auto"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-purple-400 font-inter text-center max-w-3xl mb-8 sm:mb-12 md:mb-16 mx-auto"
             initial={{ opacity: 0, y: -50 }} // Initial animation state
             animate={{ opacity: 1, y: 0 }} // Animate to this state
             transition={{ duration: 1 }} // Animation duration
@@ -140,10 +140,10 @@ const Home = () => {
                   whileHover={{ scale: 1.1 }} // Scale up on hover
                   transition={{ duration: 0.3 }} // Hover animation duration
                 />
-                <h1 className="text-center text-violet-600 font-bold font-inter text-2xl sm:text-3xl md:text-4xl">
+                <h1 className="text-center text-purple-300 font-bold font-inter text-2xl sm:text-3xl md:text-4xl">
                   {inviCard.name}
                 </h1>
-                <p className="text-center text-base sm:text-lg md:text-xl font-inter">
+                <p className="text-center text-gray-200 sm:text-lg md:text-xl font-inter">
                   {inviCard.para}
                 </p>
               </motion.div>
@@ -151,7 +151,7 @@ const Home = () => {
           </div>
 
           <motion.h1
-            className="text-center font-bold font-madi text-4xl text-violet-600 hover:scale-105 duration-200 cursor-pointer mt-10"
+            className="text-center font-bold font-madi text-4xl text-gray-200 hover:scale-105 duration-200 cursor-pointer mt-10"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}

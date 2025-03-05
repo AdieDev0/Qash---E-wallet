@@ -38,7 +38,7 @@ const Mini = () => {
               className="text-white font-medium text-sm flex items-center gap-1 hover:text-gray-300 cursor-pointer"
             >
               Help & Support{" "}
-              <FiExternalLink className="text-violet-500 text-xs" />
+              <FiExternalLink className="text-purple-400 text-xs" />
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -55,7 +55,7 @@ const Mini = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="text-violet-500 font-medium text-sm cursor-pointer"
+            className="text-purple-400 font-medium text-sm cursor-pointer"
           >
             Qash
           </motion.button>
@@ -79,7 +79,7 @@ const Mini = () => {
             className="text-white font-medium text-sm flex items-center gap-1 hover:text-gray-300 cursor-pointer"
           >
             Help & Support{" "}
-            <FiExternalLink className="text-violet-500 text-xs" />
+            <FiExternalLink className="text-purple-400 text-xs" />
           </motion.button>
           <motion.button
             whileHover={{ scale: 1.05 }}
@@ -103,7 +103,7 @@ const Mini = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="text-violet-500 font-medium text-sm cursor-pointer"
+              className="text-purple-400 font-medium text-sm cursor-pointer"
             >
               Qash
             </motion.button>
