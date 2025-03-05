@@ -13,6 +13,8 @@ import UndrawPayment from "../assets/Home/UndrawPayment.png";
 import Email from "../assets/Home/Email.png";
 import bitcoin from "../assets/Home/bitcoin.png";
 import gift from "../assets/Home/gift.png";
+import { FaCheckCircle } from "react-icons/fa";
+
 const inviCard = [
   {
     img: Percentage,
@@ -49,6 +51,8 @@ const itemVariants = {
 const cardVariants = {
   hover: { scale: 1.02, transition: { duration: 0.3 } },
 };
+
+
 
 const Home = () => {
   return (
@@ -368,23 +372,112 @@ const Home = () => {
       </div>
 
       {/* Perks */}
-      <div className="px py-20 px-40 bg-stone-800">
-        <div className="flex w-full items-center">
-          <img src={gift} alt="" className="w-60" />
-          <div className="w-[600px] mr-20">
-            <h1 className="font-bold text-4xl text-purple-400">
-              Perks all the way, baby!
-            </h1>
-            <h1 className="font-medium text-xl text-white/80">
-              Earn cashbacks when you cash-in, transfer, refer a friend and buy
-              gaming credits.
-            </h1>
+      <div className="min-h-screen bg-gradient-to-br from-stone-800 to-stone-900 py-20 px-6 md:px-40">
+      {/* Header Section */}
+      <motion.div
+        className="flex flex-col md:flex-row items-center gap-6 md:gap-10 mb-20"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        <motion.img
+          src={gift}
+          alt="Gift"
+          className="w-40 md:w-60"
+          variants={itemVariants}
+        />
+        <motion.div
+          className="flex-1 text-center md:text-left"
+          variants={itemVariants}
+        >
+          <h1 className="font-bold text-3xl md:text-4xl text-purple-400 mb-4">
+            Perks all the way, baby!
+          </h1>
+          <p className="font-medium text-lg md:text-xl text-white/80">
+            Earn cashbacks when you cash-in, transfer, refer a friend, and buy
+            gaming credits.
+          </p>
+        </motion.div>
+        <motion.button
+          className="bg-purple-600 hover:bg-purple-700 duration-200 font-bold font-inter text-lg md:text-xl w-full md:w-72 py-4 md:py-5 rounded-2xl cursor-pointer"
+          variants={itemVariants}
+          whileHover={{ scale: 1.05 }}
+        >
+          Get the App
+        </motion.button>
+      </motion.div>
+
+      {/* Cards Section */}
+      <motion.div
+        className="flex flex-col md:flex-row gap-6"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        {/* 1st Card */}
+        <motion.div
+          className="p-6 md:p-10 bg-purple-900 rounded-3xl flex-1"
+          variants={cardVariants}
+          whileHover="hover"
+        >
+          <div className="flex gap-4 items-center mb-6">
+            <FaCheckCircle className="text-green-400 size-6 md:size-7" />
+            <p className="font-bold text-xl text-gray-200">
+              Get Banked with Maya with these exclusive deals to make the switch
+              painless
+            </p>
           </div>
-          <button className="bg-purple-600 hover:bg-purple-700 duration-200 font-bold font-inter text-xl w-72 py-5 rounded-2xl cursor-pointer">
-            Get the App
-          </button>
-        </div>
-      </div>
+          <ul className="space-y-3 mb-6">
+            <li className="text-gray-200 font-medium text-md">
+              • Up to 1x FREE cash in via InstaPay
+            </li>
+            <li className="text-gray-200 font-medium text-md">
+              • Up to 1x FREE InstaPay transfer for 2 months
+            </li>
+            <li className="text-gray-200 font-medium text-md">
+              • Up to 15% interest p.a. with Maya Savings
+            </li>
+            <li className="text-gray-200 font-medium text-md">
+              • FREE Maya card
+            </li>
+          </ul>
+          <p className="italic text-gray-400 text-sm">
+            Terms and conditions apply
+          </p>
+        </motion.div>
+
+        {/* 2nd Card */}
+        <motion.div
+          className="p-6 md:p-10 bg-purple-900 rounded-3xl flex-1"
+          variants={cardVariants}
+          whileHover="hover"
+        >
+          <div className="flex gap-4 items-center mb-6">
+            <FaCheckCircle className="text-green-400 size-6 md:size-7" />
+            <p className="font-bold text-xl text-gray-200">
+              Earn ₱50 for every friend that you get banked with Maya.
+            </p>
+          </div>
+          <div className="space-y-3 mb-6">
+            <p className="text-gray-200 font-medium text-md">
+              You can even earn up to ₱15,000 when you refer more than 30!
+            </p>
+            <p className="text-gray-200 font-medium text-md">
+              a. Achieve 30 referrals - Get ₱2,500
+            </p>
+            <p className="text-gray-200 font-medium text-md">
+              b. Achieve 50 - Get ₱3,000
+            </p>
+            <p className="text-gray-200 font-medium text-md">
+              c. Achieve 100 - Get ₱9,000
+            </p>
+          </div>
+          <p className="italic text-gray-400 text-sm">
+            Terms and conditions apply
+          </p>
+        </motion.div>
+      </motion.div>
+    </div>
     </>
   );
 };
