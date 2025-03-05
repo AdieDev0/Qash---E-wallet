@@ -12,7 +12,7 @@ import FloatCard from "../assets/Home/FloatCard.png";
 import UndrawPayment from "../assets/Home/UndrawPayment.png";
 import Email from "../assets/Home/Email.png";
 import bitcoin from "../assets/Home/bitcoin.png";
-
+import gift from "../assets/Home/gift.png";
 const inviCard = [
   {
     img: Percentage,
@@ -365,6 +365,25 @@ const Home = () => {
             </motion.div>
           </motion.div>
         </motion.div>
+      </div>
+
+      {/* Perks */}
+      <div className="px py-20 px-40 bg-stone-800">
+        <div className="flex w-full items-center">
+          <img src={gift} alt="" className="w-60" />
+          <div className="w-[600px] mr-20">
+            <h1 className="font-bold text-4xl text-purple-400">
+              Perks all the way, baby!
+            </h1>
+            <h1 className="font-medium text-xl text-white/80">
+              Earn cashbacks when you cash-in, transfer, refer a friend and buy
+              gaming credits.
+            </h1>
+          </div>
+          <button className="bg-purple-600 hover:bg-purple-700 duration-200 font-bold font-inter text-xl w-72 py-5 rounded-2xl cursor-pointer">
+            Get the App
+          </button>
+        </div>
       </div>
     </>
   );
