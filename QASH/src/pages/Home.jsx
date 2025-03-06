@@ -541,6 +541,11 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/* Upgrade your account */}
+      <div>
+        
+      </div>
     </>
   );
 };
