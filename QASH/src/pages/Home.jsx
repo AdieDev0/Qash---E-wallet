@@ -14,6 +14,11 @@ import Email from "../assets/Home/Email.png";
 import bitcoin from "../assets/Home/bitcoin.png";
 import gift from "../assets/Home/gift.png";
 import Cheerful from "../assets/Home/Cheerful.jpg";
+import PhoneUpgrade from "../assets/Home/PhoneUpgrade.png";
+import CredCardIcon from "../assets/Home/CredCardIcon.png";
+import Crypto from "../assets/Home/Crypto/png";
+import Money from "../assets/Home/Money.png";
+import Upgrade from "../assets/Home/Upgrade/png";
 import { FaCheckCircle } from "react-icons/fa";
 
 const inviCard = [
@@ -543,8 +548,19 @@ const Home = () => {
       </div>
 
       {/* Upgrade your account */}
-      <div>
-        
+      <div className="p-20 bg-stone-900">
+        <div className="bg-purple-800 flex justify-evenly p-10 rounded-3xl items-center">
+          <div>
+            <img src={PhoneUpgrade} alt="" />
+          </div>
+          <div>
+            <h1 className="text-4xl">Upgrade your Account</h1>
+            <p>
+              Access banking features, get a more personalized experience, and
+              bump up your wallet limit
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );
