@@ -16,9 +16,9 @@ import gift from "../assets/Home/gift.png";
 import Cheerful from "../assets/Home/Cheerful.jpg";
 import PhoneUpgrade from "../assets/Home/PhoneUpgrade.png";
 import CredCardIcon from "../assets/Home/CredCardIcon.png";
-import Crypto from "../assets/Home/Crypto/png";
+import Crypto from "../assets/Home/Crypto.png";
 import Money from "../assets/Home/Money.png";
-import Upgrade from "../assets/Home/Upgrade/png";
+import Upgrade from "../assets/Home/Upgrade.png";
 import { FaCheckCircle } from "react-icons/fa";
 
 const inviCard = [
