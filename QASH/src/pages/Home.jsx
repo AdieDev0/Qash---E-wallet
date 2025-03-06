@@ -198,13 +198,13 @@ const Home = () => {
           animate="visible"
         >
           <motion.h5
-            className="text-gray-200 font-semibold font-inter text-2xl"
+            className="text-gray-200 font-semibold font-inter text-lg md:text-2xl"
             variants={itemVariants}
           >
             WHAT'S NEW
           </motion.h5>
           <motion.h1
-            className="text-7xl text-purple-400 font-semibold font-inter"
+            className="text-4xl md:text-5xl lg:text-7xl text-purple-400 font-semibold font-inter"
             variants={itemVariants}
           >
             Your Money. Your Way.
