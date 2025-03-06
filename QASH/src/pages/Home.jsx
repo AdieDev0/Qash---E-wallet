@@ -486,55 +486,60 @@ const Home = () => {
       {/* USER GUIDE */}
 
       <div className="bg-stone-800 p-10 md:p-20 flex flex-col md:flex-row justify-evenly items-center gap-10">
-      {/* Left Section */}
-      <motion.div 
-        className="w-full md:w-[450px]"
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        <div className="flex items-center gap-5">
-          <p className="text-xl md:text-2xl font-semibold font-inter text-white">
-            USER GUIDE
+        {/* Left Section */}
+        <motion.div
+          className="w-full md:w-[450px]"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <div className="flex items-center gap-5">
+            <p className="text-xl md:text-2xl font-semibold font-inter text-white">
+              USER GUIDE
+            </p>
+            <img src={Cheerful} alt="Cheerful" className="w-28 md:w-40" />
+          </div>
+          <p className="text-4xl md:text-6xl font-bold font-inter text-purple-400 mb-4">
+            How to make the most out of Qash
           </p>
-          <img src={Cheerful} alt="Cheerful" className="w-28 md:w-40" />
-        </div>
-        <p className="text-4xl md:text-6xl font-bold font-inter text-purple-400 mb-4">
-          How to make the most out of Qash
-        </p>
-        <p className="text-lg md:text-2xl font-medium font-inter text-gray-200">
-          See how Maya gives you power over your finances with these step-by-step guides.
-        </p>
-      </motion.div>
+          <p className="text-lg md:text-2xl font-medium font-inter text-gray-200">
+            See how Maya gives you power over your finances with these
+            step-by-step guides.
+          </p>
+        </motion.div>
 
-      {/* Right Section (Carousel) */}
-      <motion.div 
-        className="relative max-w-md overflow-hidden rounded-xl"
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, delay: 0.3 }}
-      >
-        <div className="carousel carousel-center rounded-box space-x-4 p-4">
-          {[
-            "https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp",
-            "https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp",
-            "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp",
-            "https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp",
-            "https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp",
-            "https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp",
-            "https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp"
-          ].map((src, index) => (
-            <motion.div 
-              key={index} 
-              className="carousel-item"
-              whileHover={{ scale: 1.05 }}
-            >
-              <img src={src} className="rounded-xl w-60 md:w-72 shadow-lg" alt={`Guide ${index}`} />
-            </motion.div>
-          ))}
-        </div>
-      </motion.div>
-    </div>
+        {/* Right Section (Carousel) */}
+        <motion.div
+          className="relative max-w-md overflow-hidden rounded-xl"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+        >
+          <div className="carousel carousel-center rounded-box space-x-4 p-4">
+            {[
+              "https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp",
+              "https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp",
+              "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp",
+              "https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp",
+              "https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp",
+              "https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp",
+              "https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp",
+            ].map((src, index) => (
+              <motion.div
+                key={index}
+                className="carousel-item"
+                whileHover={{ scale: 1.05 }}
+              >
+                <img
+                  src={src}
+                  className="rounded-xl w-60 md:w-72 shadow-lg"
+                  alt={`Guide ${index}`}
+                />
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+      </div>
 
       {/* Upgrade your account */}
       <div className="p-10 md:p-20 bg-stone-900">
