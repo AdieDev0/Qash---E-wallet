@@ -553,12 +553,40 @@ const Home = () => {
           <div>
             <img src={PhoneUpgrade} alt="" />
           </div>
-          <div>
-            <h1 className="text-4xl">Upgrade your Account</h1>
-            <p>
+          <div className="">
+            <h1 className="text-4xl font-bold font-inter mb-5">
+              Upgrade your Account
+            </h1>
+            <p className="text-xl font-medium font-inter mb-10">
               Access banking features, get a more personalized experience, and
               bump up your wallet limit
             </p>
+            <div className="flex gap-2 items-center mb-3">
+              <img src={Money} alt="" className="size-8" />
+              <p className="font-medium font-inter">
+                Open a savings account with up to 10% p.a. starting March 7
+              </p>
+            </div>
+            <div className="flex gap-2 items-center mb-3">
+              <img src={Crypto} alt="" className="size-8" />
+              <p className="font-medium font-inter">Buy and sell crypto</p>
+            </div>
+            <div className="flex gap-2 items-center mb-3">
+              <img src={CredCardIcon} alt="" className="size-8" />
+              <p className="font-medium font-inter">
+                Shop online or in-store with a physical or virtual wallet card
+              </p>
+            </div>
+            <div className="flex gap-2 items-center mb-3">
+              <img src={Upgrade} alt="" className="size-8" />
+              <p className="font-medium font-inter">
+                Max your monthly wallet limit from ₱50K to ₱100K
+              </p>
+            </div>
+
+            <button className="mt-10 bg-purple-400 font-bold font-inter px-10 py-5 rounded-2xl cursor-pointer">
+              Tell me more
+            </button>
           </div>
         </div>
       </div>
