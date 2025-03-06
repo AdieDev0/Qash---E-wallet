@@ -11,7 +11,7 @@ const Mini = () => {
 
   return (
     <motion.div
-      className="bg-black text-white py-2"
+      className="bg-gradient-to-r from-orange-400 via-orange-800 to-orange-600 text-white py-2"
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}

@@ -13,6 +13,7 @@ import UndrawPayment from "../assets/Home/UndrawPayment.png";
 import Email from "../assets/Home/Email.png";
 import bitcoin from "../assets/Home/bitcoin.png";
 import gift from "../assets/Home/gift.png";
+import Cheerful from "../assets/Home/Cheerful.jpg";
 import { FaCheckCircle } from "react-icons/fa";
 
 const inviCard = [
@@ -475,6 +476,70 @@ const Home = () => {
             </p>
           </motion.div>
         </motion.div>
+      </div>
+
+      {/* USER GUIDE */}
+
+      <div className="bg-stone-800 p-20 flex justify-evenly">
+        <div className="w-[450px]">
+          <div className="flex items-center gap-5">
+            <p className="text-2xl font-semibold font-inter">USER GUIDE</p>
+            <img src={Cheerful} alt="" className="size-40" />
+          </div>
+          <p className="text-6xl font-bold font-inter text-purple-400 mb-5">
+            How to make the most out of Qash
+          </p>
+          <p className="text-2xl font-medium font-inter">
+            See how Maya gives you power over your finances with these step by
+            step guides
+          </p>
+        </div>
+        <div>
+          <div className="carousel carousel-center rounded-box max-w-md space-x-4 p-4">
+            <div className="carousel-item">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
+                className="rounded-box"
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp"
+                className="rounded-box"
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp"
+                className="rounded-box"
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp"
+                className="rounded-box"
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp"
+                className="rounded-box"
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp"
+                className="rounded-box"
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp"
+                className="rounded-box"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
