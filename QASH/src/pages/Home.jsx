@@ -616,6 +616,23 @@ const Home = () => {
           </motion.div>
         </motion.div>
       </div>
+
+      {/* Deals */}
+      <div className="bg-stone-800 p-10 md:p-30">
+        <div className="flex flex-col md:flex-row justify-between gap-10">
+          <div>
+            <p className="text-xl font-inter font-semibold mb-5">DEALS</p>
+            <p className="text-5xl font-inter font-bold text-purple-600">
+              Seal the deal with Qash
+            </p>
+          </div>
+          <div>
+            <button className="border border-purple-600 rounded-2xl px-10 py-5 text-xl font-bold font-inter text-purple-400 hover:scale-105 duration-200 cursor-pointer">
+              Discover more deals & promos
+            </button>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
