@@ -20,106 +20,102 @@ import Crypto from "../assets/Home/Crypto.png";
 import Money from "../assets/Home/Money.png";
 import Upgrade from "../assets/Home/Upgrade.png";
 import { FaCheckCircle } from "react-icons/fa";
+import beans from "../assets/Home/beans.jpg";
+import business from "../assets/Home/business.webp";
+import cafe from "../assets/Home/cafe.jpg";
+import cashbackk from "../assets/Home/cashbackk.jpg";
+import coffeeSale from "../assets/Home/coffeeSale.jpg";
+import Credit from "../assets/Home/Credit.webp";
+import ecoBags from "../assets/Home/ecoBags.jpg";
+import freeShip from "../assets/Home/freeShip.jpg";
+import mocha from "../assets/Home/mocha.png";
+import off from "../assets/Home/off.jpg";
+import phoneCashback from "../assets/Home/phoneCashback.jpeg";
+import Rewards from "../assets/Home/Rewards.webp";
+import sale from "../assets/Home/sale.webp";
+import spend from "../assets/Home/spend.jpg";
+import vault from "../assets/Home/vault.jpg";
+import vip from "../assets/Home/vip.jpg";
 
 const dealsCard = [
   {
-    img: "",
+    img: vault,
     title: "₱300 joining bonus exclusive to BeanVault members!",
     buttonText: "Check it out",
   },
   {
-    img: "",
+    img: cashbackk,
     title: "Get ₱100 cashback on your first purchase at BrewSure Insurance!",
     buttonText: "Check it out",
   },
   {
-    img: "",
+    img: Credit,
     title: "Save up to 50% OFF this March at Roast & Relax!",
     buttonText: "Check it out",
   },
   {
-    img: "",
+    img: Rewards,
     title: "PerkPay Spend Anywhere Promo – Earn rewards daily!",
     buttonText: "Check it out",
   },
   {
-    img: "",
+    img: vip,
     title: "Exclusive 20% discount for new Roastify customers!",
     buttonText: "Check it out",
   },
   {
-    img: "",
+    img: coffeeSale,
     title: "Buy 1 Get 1 on selected coffee blends at AromaHouse!",
     buttonText: "Check it out",
   },
   {
-    img: "",
+    img: freeShip,
     title: "Free shipping on orders above ₱1,500 at SteamBrew!",
     buttonText: "Check it out",
   },
   {
-    img: "",
+    img: Rewards,
     title: "Earn double points this weekend with BeanBliss Rewards!",
     buttonText: "Check it out",
   },
   {
-    img: "",
+    img: sale,
     title: "Flash Sale: Up to 70% OFF for 24 hours at CaffeineMart!",
     buttonText: "Check it out",
   },
   {
-    img: "",
+    img: off,
     title: "BrewAcademy student discount: 15% OFF on all items!",
     buttonText: "Check it out",
   },
   {
-    img: "",
+    img: beans,
     title: "Win a free trip to Brew Haven! Join our raffle now!",
     buttonText: "Check it out",
   },
   {
-    img: "",
+    img: mocha,
     title: "Free drink with every pastry purchase at Mocha Lane!",
     buttonText: "Check it out",
   },
   {
-    img: "",
+    img: spend,
     title: "₱500 voucher when you refer a friend to PerkPoints!",
     buttonText: "Check it out",
   },
   {
-    img: "",
+    img: cafe,
     title: "Happy Hour: 50% OFF on selected beverages at Espresso Wave!",
     buttonText: "Check it out",
   },
   {
-    img: "",
+    img: business,
     title: "Mid-year Sale: Up to 60% OFF storewide at RoastLab!",
     buttonText: "Check it out",
   },
   {
-    img: "",
+    img: ecoBags,
     title: "Get a free eco-bag with every purchase at Java Essence!",
-    buttonText: "Check it out",
-  },
-  {
-    img: "",
-    title: "Limited Edition Merch available now at CafeCulture!",
-    buttonText: "Check it out",
-  },
-  {
-    img: "",
-    title: "Free gift wrapping for all online orders at MornBrew!",
-    buttonText: "Check it out",
-  },
-  {
-    img: "",
-    title: "Special rewards for VIP members this month at Cuppa Club!",
-    buttonText: "Check it out",
-  },
-  {
-    img: "",
-    title: "₱100 OFF on your first online order at Bean Cart!",
     buttonText: "Check it out",
   },
 ];
