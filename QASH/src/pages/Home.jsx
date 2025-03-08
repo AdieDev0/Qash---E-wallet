@@ -732,26 +732,36 @@ const Home = () => {
           </div>
         </div>
 
-        <div>
-          {dealsCard.map((dealsCard, index) => (
-            <div
-              key={index}
-              className="flex flex-col md:flex-row gap-5 p-6 md:p-10 bg-gradient-to-tr from-gray-300 via-gray-200 rounded-3xl shadow-md my-5"
-            >
-              <div>
-                <img src={dealsCard.img} alt="" />
-              </div>
-              <div className="grid gap-5">
-                <p className="text-2xl font-bold font-inter text-gray-700">
-                  {dealsCard.title}
-                </p>
-                <button className="px-10 py-5 bg-purple-700 mx-auto text-gray-200 font-bold font-inter rounded-xl hover:bg-purple-600 duration-200 cursor-pointer">
-                  {dealsCard.buttonText}
-                </button>
-              </div>
-            </div>
-          ))}
+        <div className="overflow-x-auto scrollbar-hide py-5">
+  <div className="flex gap-5 w-max">
+    {dealsCard.map((dealsCard, index) => (
+      <div
+        key={index}
+        className="flex flex-col md:flex-row items-center gap-5 p-6 md:p-10 bg-gradient-to-tr from-gray-300 via-gray-200 rounded-3xl shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105 overflow-hidden w-[300px] md:w-[400px] flex-shrink-0"
+      >
+        {/* Image Container */}
+        <div className="w-28 h-28 md:w-36 md:h-36 flex-shrink-0">
+          <img
+            src={dealsCard.img}
+            alt={dealsCard.title}
+            className="w-full h-full object-cover rounded-xl"
+          />
         </div>
+
+        {/* Text Content */}
+        <div className="flex flex-col items-center md:items-start text-center md:text-left gap-4 flex-1">
+          <p className="text-lg md:text-xl font-bold font-inter text-gray-800">
+            {dealsCard.title}
+          </p>
+          <button className="px-6 py-3 bg-purple-700 text-white font-semibold rounded-lg hover:bg-purple-600 transition duration-200 shadow-md hover:shadow-lg">
+            {dealsCard.buttonText}
+          </button>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
       </div>
     </>
   );
