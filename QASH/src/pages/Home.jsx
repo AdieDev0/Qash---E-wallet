@@ -21,6 +21,109 @@ import Money from "../assets/Home/Money.png";
 import Upgrade from "../assets/Home/Upgrade.png";
 import { FaCheckCircle } from "react-icons/fa";
 
+const dealsCard = [
+  {
+    img: "",
+    title: "₱300 joining bonus exclusive to BeanVault members!",
+    buttonText: "Check it out",
+  },
+  {
+    img: "",
+    title: "Get ₱100 cashback on your first purchase at BrewSure Insurance!",
+    buttonText: "Check it out",
+  },
+  {
+    img: "",
+    title: "Save up to 50% OFF this March at Roast & Relax!",
+    buttonText: "Check it out",
+  },
+  {
+    img: "",
+    title: "PerkPay Spend Anywhere Promo – Earn rewards daily!",
+    buttonText: "Check it out",
+  },
+  {
+    img: "",
+    title: "Exclusive 20% discount for new Roastify customers!",
+    buttonText: "Check it out",
+  },
+  {
+    img: "",
+    title: "Buy 1 Get 1 on selected coffee blends at AromaHouse!",
+    buttonText: "Check it out",
+  },
+  {
+    img: "",
+    title: "Free shipping on orders above ₱1,500 at SteamBrew!",
+    buttonText: "Check it out",
+  },
+  {
+    img: "",
+    title: "Earn double points this weekend with BeanBliss Rewards!",
+    buttonText: "Check it out",
+  },
+  {
+    img: "",
+    title: "Flash Sale: Up to 70% OFF for 24 hours at CaffeineMart!",
+    buttonText: "Check it out",
+  },
+  {
+    img: "",
+    title: "BrewAcademy student discount: 15% OFF on all items!",
+    buttonText: "Check it out",
+  },
+  {
+    img: "",
+    title: "Win a free trip to Brew Haven! Join our raffle now!",
+    buttonText: "Check it out",
+  },
+  {
+    img: "",
+    title: "Free drink with every pastry purchase at Mocha Lane!",
+    buttonText: "Check it out",
+  },
+  {
+    img: "",
+    title: "₱500 voucher when you refer a friend to PerkPoints!",
+    buttonText: "Check it out",
+  },
+  {
+    img: "",
+    title: "Happy Hour: 50% OFF on selected beverages at Espresso Wave!",
+    buttonText: "Check it out",
+  },
+  {
+    img: "",
+    title: "Mid-year Sale: Up to 60% OFF storewide at RoastLab!",
+    buttonText: "Check it out",
+  },
+  {
+    img: "",
+    title: "Get a free eco-bag with every purchase at Java Essence!",
+    buttonText: "Check it out",
+  },
+  {
+    img: "",
+    title: "Limited Edition Merch available now at CafeCulture!",
+    buttonText: "Check it out",
+  },
+  {
+    img: "",
+    title: "Free gift wrapping for all online orders at MornBrew!",
+    buttonText: "Check it out",
+  },
+  {
+    img: "",
+    title: "Special rewards for VIP members this month at Cuppa Club!",
+    buttonText: "Check it out",
+  },
+  {
+    img: "",
+    title: "₱100 OFF on your first online order at Bean Cart!",
+    buttonText: "Check it out",
+  },
+];
+
 const inviCard = [
   {
     img: Percentage,
@@ -634,7 +737,24 @@ const Home = () => {
         </div>
 
         <div>
-          
+          {dealsCard.map((dealsCard, index) => (
+            <div
+              key={index}
+              className="flex flex-col md:flex-row gap-5 p-6 md:p-10 bg-gradient-to-tr from-gray-300 via-gray-200 rounded-3xl shadow-md my-5"
+            >
+              <div>
+                <img src={dealsCard.img} alt="" />
+              </div>
+              <div className="grid gap-5">
+                <p className="text-2xl font-bold font-inter text-gray-700">
+                  {dealsCard.title}
+                </p>
+                <button className="px-10 py-5 bg-purple-700 mx-auto text-gray-200 font-bold font-inter rounded-xl hover:bg-purple-600 duration-200 cursor-pointer">
+                  {dealsCard.buttonText}
+                </button>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </>
