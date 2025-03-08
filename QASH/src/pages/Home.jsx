@@ -733,35 +733,36 @@ const Home = () => {
         </div>
 
         <div className="overflow-x-auto scrollbar-hide py-5">
-  <div className="flex gap-5 w-max">
-    {dealsCard.map((dealsCard, index) => (
-      <div
-        key={index}
-        className="flex flex-col md:flex-row items-center gap-5 p-6 md:p-10 bg-gradient-to-tr from-gray-300 via-gray-200 rounded-3xl shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105 overflow-hidden w-[300px] md:w-[400px] flex-shrink-0"
-      >
-        {/* Image Container */}
-        <div className="w-28 h-28 md:w-36 md:h-36 flex-shrink-0">
-          <img
-            src={dealsCard.img}
-            alt={dealsCard.title}
-            className="w-full h-full object-cover rounded-xl"
-          />
-        </div>
+          <div className="flex gap-5 w-max">
+            {dealsCard.map((deals, index) => (
+              <div
+                key={index}
+                className="flex flex-col bg-[#1A1A1A] text-white w-[300px] md:w-[340px] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105 overflow-hidden flex-shrink-0"
+                aria-label={`Deal card for ${deals.title}`}
+              >
+                {/* Image */}
+                <div className="w-full h-40 rounded-t-2xl overflow-hidden">
+                  <img
+                    src={deals.img}
+                    alt={deals.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
 
-        {/* Text Content */}
-        <div className="flex flex-col items-center md:items-start text-center md:text-left gap-4 flex-1">
-          <p className="text-lg md:text-xl font-bold font-inter text-gray-800">
-            {dealsCard.title}
-          </p>
-          <button className="px-6 py-3 bg-purple-700 text-white font-semibold rounded-lg hover:bg-purple-600 transition duration-200 shadow-md hover:shadow-lg">
-            {dealsCard.buttonText}
-          </button>
-        </div>
-      </div>
-    ))}
-  </div>
-</div>
+                {/* Text Content */}
+                <div className="p-5 flex flex-col gap-3">
+                  <h3 className="text-lg font-bold">{deals.title}</h3>
+                  <p className="text-sm text-gray-300">{deals.description}</p>
 
+                  <button className="text-purple-400 font-semibold flex items-center gap-1 hover:text-purple-300 transition duration-200 cursor-pointer">
+                    Check it out →
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </>
   );
