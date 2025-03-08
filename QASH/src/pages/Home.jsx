@@ -619,7 +619,7 @@ const Home = () => {
 
       {/* Deals */}
       <div className="bg-stone-800 p-10 md:p-30">
-        <div className="flex flex-col md:flex-row justify-between gap-10">
+        <div className="flex flex-col md:flex-row justify-between gap-10 px-10 items-center">
           <div>
             <p className="text-xl font-inter font-semibold mb-5">DEALS</p>
             <p className="text-5xl font-inter font-bold text-purple-600">
@@ -631,6 +631,10 @@ const Home = () => {
               Discover more deals & promos
             </button>
           </div>
+        </div>
+
+        <div>
+          
         </div>
       </div>
     </>
