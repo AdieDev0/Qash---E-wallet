@@ -764,11 +764,15 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex justify-center mt-10">
+        {/* <div className="flex justify-center mt-10">
           <button className="bg-purple-800 text-white font-inter font-bold text-xl px-10 py-5 rounded-3xl hover:bg-purple-700 duration-200 cursor-pointer">
             See more stories
           </button>
-        </div>
+        </div> */}
+      </div>
+
+      <div>
+
       </div>
     </>
   );
