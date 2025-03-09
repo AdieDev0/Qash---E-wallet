@@ -36,6 +36,7 @@ import sale from "../assets/Home/sale.webp";
 import spend from "../assets/Home/spend.jpg";
 import vault from "../assets/Home/vault.jpg";
 import vip from "../assets/Home/vip.jpg";
+import Marquee from "react-fast-marquee";
 
 const dealsCard = [
   {
@@ -770,10 +771,12 @@ const Home = () => {
           </button>
         </div> */}
       </div>
-        
-        {/* Marquues */}
+
+      {/* Marquues */}
       <div>
-            
+        <Marquee autoFill play={true} direction="left">
+          <p>hellow??</p>
+        </Marquee>
       </div>
     </>
   );
