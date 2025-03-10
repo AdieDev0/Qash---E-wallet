@@ -356,7 +356,6 @@ const Home = () => {
           <ThemeToggle />
         </div>
       </div>
-
       {/* Cards Section */}
       <div className="bg-stone-800 p-4 sm:p-10 md:p-20">
         <div>
@@ -405,7 +404,6 @@ const Home = () => {
           </motion.h1>
         </div>
       </div>
-
       {/* FlexBox */}
       <div className="min-h-screen bg-gradient-to-br from-stone-800 to-stone-900 p-10">
         <motion.div
@@ -591,7 +589,6 @@ const Home = () => {
           </motion.div>
         </motion.div>
       </div>
-
       {/* Perks */}
       <div className="min-h-screen bg-gradient-to-br from-stone-800 to-stone-900 py-20 px-6 md:px-40">
         {/* Header Section */}
@@ -699,9 +696,7 @@ const Home = () => {
           </motion.div>
         </motion.div>
       </div>
-
       {/* USER GUIDE */}
-
       <div className="bg-stone-800 p-10 md:p-20 flex flex-col md:flex-row justify-evenly items-center gap-10">
         {/* Left Section */}
         <motion.div
@@ -757,7 +752,6 @@ const Home = () => {
           </div>
         </motion.div>
       </div>
-
       {/* Upgrade your account */}
       <div className="p-10 md:p-20 bg-stone-900">
         <motion.div
@@ -833,28 +827,43 @@ const Home = () => {
           </motion.div>
         </motion.div>
       </div>
-
       {/* Deals */}
       <div className="bg-stone-800 p-10 md:p-30">
-        <div className="flex flex-col md:flex-row justify-between gap-10 px-10 items-center">
+        {/* Header with Animation */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="flex flex-col md:flex-row justify-between gap-10 px-10 items-center"
+        >
           <div>
             <p className="text-xl font-inter font-semibold mb-5">DEALS</p>
             <p className="text-5xl font-inter font-bold text-purple-600">
               Seal the deal with Qash
             </p>
           </div>
-          <div>
-            <button className="border border-purple-600 rounded-2xl px-10 py-5 text-xl font-bold font-inter text-purple-400 hover:scale-105 duration-200 cursor-pointer">
-              Discover more deals & promos
-            </button>
-          </div>
-        </div>
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="border border-purple-600 rounded-2xl px-10 py-5 text-xl font-bold font-inter text-purple-400 transition-all duration-200 cursor-pointer"
+          >
+            Discover more deals & promos
+          </motion.button>
+        </motion.div>
 
+        {/* Deals Cards with Motion */}
         <div className="overflow-x-auto scrollbar-hide py-5">
-          <div className="flex gap-5 w-max">
+          <motion.div className="flex gap-5 w-max">
             {dealsCard.map((deals, index) => (
-              <div
+              <motion.div
                 key={index}
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{
+                  duration: 0.6,
+                  ease: "easeOut",
+                  delay: index * 0.2,
+                }}
                 className="flex flex-col bg-[#1A1A1A] text-white w-[300px] md:w-[340px] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105 overflow-hidden flex-shrink-0"
                 aria-label={`Deal card for ${deals.title}`}
               >
@@ -873,101 +882,118 @@ const Home = () => {
                   <h3 className="text-lg font-bold">{deals.title}</h3>
                   <p className="text-sm text-gray-300">{deals.description}</p>
 
-                  <button className="text-purple-400 font-semibold flex items-center gap-1 hover:text-purple-300 transition duration-200 cursor-pointer">
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    className="text-purple-400 font-semibold flex items-center gap-1 hover:text-purple-300 transition duration-200 cursor-pointer"
+                  >
                     Check it out →
-                  </button>
+                  </motion.button>
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
-
-        {/* <div className="flex justify-center mt-10">
-          <button className="bg-purple-800 text-white font-inter font-bold text-xl px-10 py-5 rounded-3xl hover:bg-purple-700 duration-200 cursor-pointer">
-            See more stories
-          </button>
-        </div> */}
       </div>
-
       {/* MARQUUES SECTION */}
       <div className="flex flex-col md:flex-row items-center justify-between bg-stone-800 p-6 md:p-10 lg:px-32 text-center md:text-left">
-        <div className="mb-6 md:mb-0">
-          <p className="text-gray-200 font-bold font-inter text-xl mb-4">
-            PARTNER MERCHANTS
-          </p>
-          <p className="text-purple-400 font-bold font-inter text-3xl md:text-5xl mb-4">
-            Meet the QASH community
-          </p>
-          <p className="text-gray-200 font-bold font-inter text-xl">
-            Check out the brands that offer the Maya experience
-          </p>
-        </div>
-        <div>
-          <button className="px-6 py-3 md:px-10 md:py-4 text-lg md:text-xl font-bold font-inter bg-purple-700 hover:bg-purple-800 duration-200 cursor-pointer rounded-xl">
-            Explore all partner merchants
-          </button>
-        </div>
-      </div>
+  {/* Header Animation */}
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8, ease: "easeOut" }}
+    className="mb-6 md:mb-0"
+  >
+    <p className="text-gray-200 font-bold font-inter text-xl mb-4">
+      PARTNER MERCHANTS
+    </p>
+    <p className="text-purple-400 font-bold font-inter text-3xl md:text-5xl mb-4">
+      Meet the QASH community
+    </p>
+    <p className="text-gray-200 font-bold font-inter text-xl">
+      Check out the brands that offer the Maya experience
+    </p>
+  </motion.div>
 
-      <div className="bg-stone-800">
-        <div className=" py-6">
-          {/* MARQUEE ONE */}
-          <Marquee autoFill play={true} direction="right">
-            <div className="flex gap-10 mr-6">
-              {marqueeOne.map((one, index) => (
-                <div
-                  key={index}
-                  className="bg-white p-3 rounded-2xl shadow-md flex items-center justify-center w-32 h-20 md:w-40 md:h-24"
-                >
-                  <img
-                    src={one.img}
-                    alt="/"
-                    className="max-w-full max-h-full object-contain"
-                  />
-                </div>
-              ))}
-            </div>
-          </Marquee>
-        </div>
-        <div className=" py-6">
-          {/* MARQUEE ONE */}
-          <Marquee autoFill play={true} direction="left" speed={40}>
-            <div className="flex gap-10 mr-6">
-              {marqueeTwo.map((two, index) => (
-                <div
-                  key={index}
-                  className="bg-white p-3 rounded-2xl shadow-md flex items-center justify-center w-32 h-20 md:w-40 md:h-24"
-                >
-                  <img
-                    src={two.img}
-                    alt="/"
-                    className="max-w-full max-h-full object-contain"
-                  />
-                </div>
-              ))}
-            </div>
-          </Marquee>
-        </div>
-        <div className=" py-6">
-          {/* MARQUEE ONE */}
-          <Marquee autoFill play={true} direction="right" speed={20}>
-            <div className="flex gap-10 mr-6">
-              {marqueeThree.map((three, index) => (
-                <div
-                  key={index}
-                  className="bg-white p-3 rounded-2xl shadow-md flex items-center justify-center w-32 h-20 md:w-40 md:h-24"
-                >
-                  <img
-                    src={three.img}
-                    alt="/"
-                    className="max-w-full max-h-full object-contain"
-                  />
-                </div>
-              ))}
-            </div>
-          </Marquee>
-        </div>
-      </div>
+  {/* Animated Button */}
+  <motion.button
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className="px-6 py-3 md:px-10 md:py-4 text-lg md:text-xl font-bold font-inter bg-purple-700 hover:bg-purple-800 duration-200 cursor-pointer rounded-xl"
+  >
+    Explore all partner merchants
+  </motion.button>
+</div>
+
+<div className="bg-stone-800">
+  <div className="py-6">
+    {/* MARQUEE ONE */}
+    <Marquee autoFill play={true} direction="right">
+      <motion.div className="flex gap-10 mr-6">
+        {marqueeOne.map((one, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: index * 0.1 }}
+            className="bg-white p-3 rounded-2xl shadow-md flex items-center justify-center w-32 h-20 md:w-40 md:h-24"
+          >
+            <img
+              src={one.img}
+              alt="/"
+              className="max-w-full max-h-full object-contain"
+            />
+          </motion.div>
+        ))}
+      </motion.div>
+    </Marquee>
+  </div>
+
+  <div className="py-6">
+    {/* MARQUEE TWO */}
+    <Marquee autoFill play={true} direction="left" speed={40}>
+      <motion.div className="flex gap-10 mr-6">
+        {marqueeTwo.map((two, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: index * 0.1 }}
+            className="bg-white p-3 rounded-2xl shadow-md flex items-center justify-center w-32 h-20 md:w-40 md:h-24"
+          >
+            <img
+              src={two.img}
+              alt="/"
+              className="max-w-full max-h-full object-contain"
+            />
+          </motion.div>
+        ))}
+      </motion.div>
+    </Marquee>
+  </div>
+
+  <div className="py-6">
+    {/* MARQUEE THREE */}
+    <Marquee autoFill play={true} direction="right" speed={20}>
+      <motion.div className="flex gap-10 mr-6">
+        {marqueeThree.map((three, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: index * 0.1 }}
+            className="bg-white p-3 rounded-2xl shadow-md flex items-center justify-center w-32 h-20 md:w-40 md:h-24"
+          >
+            <img
+              src={three.img}
+              alt="/"
+              className="max-w-full max-h-full object-contain"
+            />
+          </motion.div>
+        ))}
+      </motion.div>
+    </Marquee>
+  </div>
+</div>
     </>
   );
 };
