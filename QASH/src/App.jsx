@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./Components/Navbaravbar";
 import Footer from "./Components/Footer";
 import Mini from "./Components/Mini";
 import Home from "./pages/Home";
 import ThemeToggle from "./DarkMode/ThemeToggle";
+import Navbar from "./Components/navbar";
 
 const App = () => {
   return (
@@ -16,6 +16,7 @@ const App = () => {
       <ThemeToggle />
       <Routes>
         <Route path="/" element={<Home />} />
+        {/* Add additional routes here as needed */}
       </Routes>
       <Footer />
     </Router>
