@@ -292,9 +292,9 @@ const Home = () => {
         {/* Desktop View */}
         <motion.div
           className="absolute top-30 left-40 hidden lg:block"
-          initial={{ opacity: 0, y: -50 }} // Initial animation state
-          animate={{ opacity: 1, y: 0 }} // Animate to this state
-          transition={{ duration: 1 }} // Animation duration
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
         >
           <p className="text-6xl font-bold font-inter text-purple-400">
             Our first credit card.
@@ -305,15 +305,15 @@ const Home = () => {
           <div className="flex gap-5 mt-10">
             <motion.button
               className="text-xl bg-purple-700 py-5 px-14 rounded-3xl text-gray-200 font-semibold font-inter hover:scale-110 duration-200 cursor-pointer"
-              whileHover={{ scale: 1.1 }} // Scale up on hover
-              whileTap={{ scale: 0.9 }} // Scale down on click
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
             >
               Sign up
             </motion.button>
             <motion.button
               className="text-xl border border-purple-700 rounded-3xl text-purple-400 font-semibold font-inter py-5 px-14 hover:scale-110 duration-200 cursor-pointer"
-              whileHover={{ scale: 1.1 }} // Scale up on hover
-              whileTap={{ scale: 0.9 }} // Scale down on click
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
             >
               Learn more
             </motion.button>
@@ -322,29 +322,29 @@ const Home = () => {
 
         {/* Mobile & Tablet View */}
         <motion.div
-          className="absolute top-[30%] left-1/2 -translate-x-1/2 -translate-y-1/2 text-center px-6 sm:px-10 lg:hidden"
-          initial={{ opacity: 0, y: -50 }} // Initial animation state
-          animate={{ opacity: 1, y: 0 }} // Animate to this state
-          transition={{ duration: 1 }} // Animation duration
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center lg:hidden w-4/5"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
         >
-          <p className="text-3xl sm:text-4xl font-bold font-inter text-purple-400">
+          <p className="text-5xl font-bold font-inter text-purple-400">
             Our first credit card.
           </p>
-          <p className="text-lg sm:text-2xl font-inter text-gray-200 mt-3">
+          <p className="text-xl font-inter font-medium text-gray-200 mt-3">
             The last one you'll ever need for cash back
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center">
             <motion.button
-              className="w-40 text-lg sm:text-xl bg-purple-700 py-3 sm:py-4 rounded-3xl text-gray-200 font-semibold font-inter hover:scale-105 duration-200 cursor-pointer"
-              whileHover={{ scale: 1.05 }} // Scale up on hover
-              whileTap={{ scale: 0.95 }} // Scale down on click
+              className="w-full sm:w-40 text-lg sm:text-xl bg-purple-700 py-4 sm:py-5 rounded-3xl text-gray-200 font-semibold font-inter hover:scale-105 duration-200 cursor-pointer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
               Sign up
             </motion.button>
             <motion.button
-              className="w-40 text-lg sm:text-xl border border-purple-700 rounded-3xl text-purple-400 font-semibold font-inter py-3 sm:py-4 hover:scale-105 duration-200 cursor-pointer"
-              whileHover={{ scale: 1.05 }} // Scale up on hover
-              whileTap={{ scale: 0.95 }} // Scale down on click
+              className="w-full sm:w-40 text-lg sm:text-xl border border-purple-700 rounded-3xl text-purple-400 font-semibold font-inter py-4 sm:py-5 hover:scale-105 duration-200 cursor-pointer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
               Learn more
             </motion.button>
@@ -356,6 +356,7 @@ const Home = () => {
           <ThemeToggle />
         </div>
       </div>
+
       {/* Cards Section */}
       <div className="bg-stone-800 p-4 sm:p-10 md:p-20">
         <div>
