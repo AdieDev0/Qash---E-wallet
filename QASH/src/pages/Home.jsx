@@ -59,7 +59,7 @@ import Pepsi from "../assets/Home/Pepsi.webp";
 import Porsche from "../assets/Home/Porsche.webp";
 import Puma from "../assets/Home/Puma.webp";
 import Samsung from "../assets/Home/Samsung.webp";
-import SB from "../assets/Home/SB.png";
+import Star from "../assets/Home/SB.png";
 import Shell from "../assets/Home/Shell.webp";
 import Target from "../assets/Home/Target.webp";
 import Toyota from "../assets/Home/Toyota.webp";
@@ -95,6 +95,63 @@ const marqueeOne = [
   },
   {
     img: Honda,
+  },
+];
+
+const marqueeTwo = [
+  {
+    img: IBM,
+  },
+  {
+    img: Intel,
+  },
+  {
+    img: Levi,
+  },
+  {
+    img: Mcdo,
+  },
+  {
+    img: Microsoft,
+  },
+  {
+    img: Nestle,
+  },
+  {
+    img: Nike,
+  },
+  {
+    img: Nintendo,
+  },
+];
+
+const marqueeThree = [
+  {
+    img: Pepsi,
+  },
+  {
+    img: Porsche,
+  },
+  {
+    img: Puma,
+  },
+  {
+    img: Samsung,
+  },
+  {
+    img: Star,
+  },
+  {
+    img: Shell,
+  },
+  {
+    img: Target,
+  },
+  {
+    img: Toyota,
+  },
+  {
+    img: WaltDisney,
   },
 ];
 
@@ -833,23 +890,64 @@ const Home = () => {
       </div>
 
       {/* Marquues */}
-      <div className="bg-stone-800 py-6">
-        <Marquee autoFill play={true} direction="left">
-          <div className="flex gap-6 mr-6">
-            {marqueeOne.map((image, index) => (
-              <div
-                key={index}
-                className="bg-white p-3 rounded-2xl shadow-md flex items-center justify-center w-32 h-20 md:w-40 md:h-24"
-              >
-                <img
-                  src={image.img}
-                  alt="/"
-                  className="max-w-full max-h-full object-contain"
-                />
-              </div>
-            ))}
-          </div>
-        </Marquee>
+      <div className="bg-stone-800">
+        <div className=" py-6">
+          {/* MARQUEE ONE */}
+          <Marquee autoFill play={true} direction="right">
+            <div className="flex gap-10 mr-6">
+              {marqueeOne.map((one, index) => (
+                <div
+                  key={index}
+                  className="bg-white p-3 rounded-2xl shadow-md flex items-center justify-center w-32 h-20 md:w-40 md:h-24"
+                >
+                  <img
+                    src={one.img}
+                    alt="/"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+              ))}
+            </div>
+          </Marquee>
+        </div>
+        <div className=" py-6">
+          {/* MARQUEE ONE */}
+          <Marquee autoFill play={true} direction="left" speed={40}>
+            <div className="flex gap-10 mr-6">
+              {marqueeTwo.map((two, index) => (
+                <div
+                  key={index}
+                  className="bg-white p-3 rounded-2xl shadow-md flex items-center justify-center w-32 h-20 md:w-40 md:h-24"
+                >
+                  <img
+                    src={two.img}
+                    alt="/"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+              ))}
+            </div>
+          </Marquee>
+        </div>
+        <div className=" py-6">
+          {/* MARQUEE ONE */}
+          <Marquee autoFill play={true} direction="right" speed={20}>
+            <div className="flex gap-10 mr-6">
+              {marqueeThree.map((three, index) => (
+                <div
+                  key={index}
+                  className="bg-white p-3 rounded-2xl shadow-md flex items-center justify-center w-32 h-20 md:w-40 md:h-24"
+                >
+                  <img
+                    src={three.img}
+                    alt="/"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+              ))}
+            </div>
+          </Marquee>
+        </div>
       </div>
     </>
   );
