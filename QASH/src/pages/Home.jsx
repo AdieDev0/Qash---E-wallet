@@ -37,6 +37,39 @@ import spend from "../assets/Home/spend.jpg";
 import vault from "../assets/Home/vault.jpg";
 import vip from "../assets/Home/vip.jpg";
 import Marquee from "react-fast-marquee";
+import adidas from "../assets/Home/adidas.webp";
+import Amazon from "../assets/Home/Amazon.png";
+import Apple from "../assets/Home/Apple.png";
+import Benz from "../assets/Home/Benz.webp";
+import Bmw from "../assets/Home/Bmw.webp";
+import Chanel from "../assets/Home/Chanel.webp";
+import CocaCola from "../assets/Home/CocaCola.webp";
+import FB from "../assets/Home/FB.webp";
+import Google from "../assets/Home/Google.png";
+import Honda from "../assets/Home/Honda.webp";
+import IBM from "../assets/Home/IBM.webp";
+import Intel from "../assets/Home/Intel.png";
+import Levi from "../assets/Home/Levi.webp";
+import Mcdo from "../assets/Home/Mcdo.webp";
+import Microsoft from "../assets/Home/Microsoft.webp";
+import Nestle from "../assets/Home/Nestle.webp";
+import Nike from "../assets/Home/Nike.webp";
+import Nintendo from "../assets/Home/Nintendo.webp";
+import Pepsi from "../assets/Home/Pepsi.webp";
+import Porsche from "../assets/Home/Porsche.webp";
+import Puma from "../assets/Home/Puma.webp";
+import Samsung from "../assets/Home/Samsung.webp";
+import SB from "../assets/Home/SB.png";
+import Shell from "../assets/Home/Shell.webp";
+import Target from "../assets/Home/Target.webp";
+import Toyota from "../assets/Home/Toyota.webp";
+import WaltDisney from "../assets/Home/WaltDisney.png";
+
+const marqueeOne = [
+  {
+    img: adidas,
+  },
+];
 
 const dealsCard = [
   {
