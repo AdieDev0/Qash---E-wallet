@@ -890,7 +890,25 @@ const Home = () => {
       </div>
 
       {/* MARQUUES SECTION */}
-      
+      <div className="flex flex-col md:flex-row items-center justify-between bg-stone-800 p-6 md:p-10 lg:px-32 text-center md:text-left">
+        <div className="mb-6 md:mb-0">
+          <p className="text-gray-200 font-bold font-inter text-xl mb-4">
+            PARTNER MERCHANTS
+          </p>
+          <p className="text-purple-400 font-bold font-inter text-3xl md:text-5xl mb-4">
+            Meet the QASH community
+          </p>
+          <p className="text-gray-200 font-bold font-inter text-xl">
+            Check out the brands that offer the Maya experience
+          </p>
+        </div>
+        <div>
+          <button className="px-6 py-3 md:px-10 md:py-4 text-lg md:text-xl font-bold font-inter bg-purple-700 hover:bg-purple-800 duration-200 cursor-pointer rounded-xl">
+            Explore all partner merchants
+          </button>
+        </div>
+      </div>
+
       <div className="bg-stone-800">
         <div className=" py-6">
           {/* MARQUEE ONE */}
