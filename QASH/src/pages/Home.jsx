@@ -889,7 +889,8 @@ const Home = () => {
         </div> */}
       </div>
 
-      {/* Marquues */}
+      {/* MARQUUES SECTION */}
+      
       <div className="bg-stone-800">
         <div className=" py-6">
           {/* MARQUEE ONE */}
