@@ -69,6 +69,33 @@ const marqueeOne = [
   {
     img: adidas,
   },
+  {
+    img: Amazon,
+  },
+  {
+    img: Apple,
+  },
+  {
+    img: Benz,
+  },
+  {
+    img: Bmw,
+  },
+  {
+    img: Chanel,
+  },
+  {
+    img: CocaCola,
+  },
+  {
+    img: FB,
+  },
+  {
+    img: Google,
+  },
+  {
+    img: Honda,
+  },
 ];
 
 const dealsCard = [
@@ -806,9 +833,22 @@ const Home = () => {
       </div>
 
       {/* Marquues */}
-      <div>
+      <div className="bg-stone-800 py-6">
         <Marquee autoFill play={true} direction="left">
-          <p>hellow??</p>
+          <div className="flex gap-6 mr-6">
+            {marqueeOne.map((image, index) => (
+              <div
+                key={index}
+                className="bg-white p-3 rounded-2xl shadow-md flex items-center justify-center w-32 h-20 md:w-40 md:h-24"
+              >
+                <img
+                  src={image.img}
+                  alt="/"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+            ))}
+          </div>
         </Marquee>
       </div>
     </>
