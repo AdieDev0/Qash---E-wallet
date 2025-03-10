@@ -8,7 +8,7 @@ import Protect from "../assets/Home/Protect.png";
 import Start from "../assets/Home/Start.png";
 import CredCard from "../assets/Home/CredCard.png";
 import ModelCard from "../assets/Home/ModelCard.png";
-import FloatCrd from "../assets/Home/FloatCard.png";
+import FiveCards from "../assets/Home/FiveCards.png";
 import UndrawPayment from "../assets/Home/UndrawPayment.png";
 import Email from "../assets/Home/Email.png";
 import bitcoin from "../assets/Home/bitcoin.png";
@@ -504,7 +504,7 @@ const Home = () => {
                 </div>
               </div>
               <div>
-                <img src={FloatCrd} alt="" className="w-full mt-10" />
+                <img src={FiveCards} alt="" className="w-full mt-10" />
               </div>
             </motion.div>
           </motion.div>
