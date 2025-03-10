@@ -13,7 +13,7 @@ import QrCode from "../assets/Footer/QrCode.jpg";
 
 const Footer = () => {
   return (
-    <footer className="bg-stone-800 text-purple-400 py-12 border-t-4 border-purple-600">
+    <footer className="bg-stone-800 py-12 border-t-4 border-purple-600">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 px-6">
         {/* Logo */}
         <div className="text-center md:text-left">
@@ -37,12 +37,12 @@ const Footer = () => {
             banking services.
           </p>
           <a
-            href="https://www.bsp.gov.ph"
+            href="https://www.youtube.com/watch?v=Yw6u6YkTgQ4"
             target="_blank"
             rel="noopener noreferrer"
             className="text-purple-400 hover:underline inline-block mt-2"
           >
-            www.bsp.gov.ph
+            Hello World
           </a>
         </div>
       </div>
@@ -52,10 +52,16 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold text-lg mb-3">Quick Links</h3>
           <ul className="space-y-2 text-sm">
-            <li className="hover:text-purple-300 cursor-pointer">Home</li>
-            <li className="hover:text-purple-300 cursor-pointer">User Guide</li>
-            <li className="hover:text-purple-300 cursor-pointer">Deals</li>
-            <li className="hover:text-purple-300 cursor-pointer">
+            <li className="text-purple-300 hover:text-purple-400 duration-200 cursor-pointer">
+              Home
+            </li>
+            <li className="text-purple-300 hover:text-purple-400 duration-200 cursor-pointer">
+              User Guide
+            </li>
+            <li className="text-purple-300 hover:text-purple-400 duration-200 cursor-pointer">
+              Deals
+            </li>
+            <li className="text-purple-300 hover:text-purple-400 duration-200 cursor-pointer">
               Partner Merchants
             </li>
           </ul>
@@ -82,7 +88,7 @@ const Footer = () => {
         <div className="text-center md:text-left">
           <h3 className="font-semibold text-lg mb-3">Scan to Download</h3>
           <div className="flex justify-center md:justify-start border-2 border-purple-400 p-4 rounded-xl">
-            <BsQrCode className="w-24 h-24 text-purple-400" />
+            <img src={QrCode} className="w-24 h-24 text-purple-400" />
           </div>
         </div>
       </div>
