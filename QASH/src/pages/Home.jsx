@@ -358,7 +358,7 @@ const Home = () => {
       </div>
 
       {/* Cards Section */}
-      <div className="bg-stone-800 p-4 sm:p-10 md:p-20">
+      <div className="bg-stone-800 p-10 sm:p-10 md:p-20">
         <div>
           <motion.p
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-purple-400 font-inter text-center max-w-3xl mb-8 sm:mb-12 md:mb-16 mx-auto"
