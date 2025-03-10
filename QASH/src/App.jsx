@@ -4,14 +4,14 @@ import Footer from "./Components/Footer";
 import Mini from "./Components/Mini";
 import Home from "./pages/Home";
 import ThemeToggle from "./DarkMode/ThemeToggle";
-import Navbar from "./Components/navbar";
+import NaviBar from "./Components/NaviBar";
 
 const App = () => {
   return (
     <Router>
       <Mini />
       <div className="top-0 sticky z-50">
-        <Navbar />
+        <NaviBar />
       </div>
       <ThemeToggle />
       <Routes>
