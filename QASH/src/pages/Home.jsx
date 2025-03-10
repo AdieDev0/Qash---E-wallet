@@ -896,104 +896,104 @@ const Home = () => {
       </div>
       {/* MARQUUES SECTION */}
       <div className="flex flex-col md:flex-row items-center justify-between bg-stone-800 p-6 md:p-10 lg:px-32 text-center md:text-left">
-  {/* Header Animation */}
-  <motion.div
-    initial={{ opacity: 0, y: 30 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.8, ease: "easeOut" }}
-    className="mb-6 md:mb-0"
-  >
-    <p className="text-gray-200 font-bold font-inter text-xl mb-4">
-      PARTNER MERCHANTS
-    </p>
-    <p className="text-purple-400 font-bold font-inter text-3xl md:text-5xl mb-4">
-      Meet the QASH community
-    </p>
-    <p className="text-gray-200 font-bold font-inter text-xl">
-      Check out the brands that offer the Maya experience
-    </p>
-  </motion.div>
+        {/* Header Animation */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="mb-6 md:mb-0"
+        >
+          <p className="text-gray-200 font-bold font-inter text-xl mb-4">
+            PARTNER MERCHANTS
+          </p>
+          <p className="text-purple-400 font-bold font-inter text-3xl md:text-5xl mb-4">
+            Meet the QASH community
+          </p>
+          <p className="text-gray-200 font-bold font-inter text-xl">
+            Check out the brands that offer the Maya experience
+          </p>
+        </motion.div>
 
-  {/* Animated Button */}
-  <motion.button
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-    className="px-6 py-3 md:px-10 md:py-4 text-lg md:text-xl font-bold font-inter bg-purple-700 hover:bg-purple-800 duration-200 cursor-pointer rounded-xl"
-  >
-    Explore all partner merchants
-  </motion.button>
-</div>
+        {/* Animated Button */}
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="px-6 py-3 md:px-10 md:py-4 text-lg md:text-xl font-bold font-inter bg-purple-700 hover:bg-purple-800 duration-200 cursor-pointer rounded-xl"
+        >
+          Explore all partner merchants
+        </motion.button>
+      </div>
 
-<div className="bg-stone-800">
-  <div className="py-6">
-    {/* MARQUEE ONE */}
-    <Marquee autoFill play={true} direction="right">
-      <motion.div className="flex gap-10 mr-6">
-        {marqueeOne.map((one, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: index * 0.1 }}
-            className="bg-white p-3 rounded-2xl shadow-md flex items-center justify-center w-32 h-20 md:w-40 md:h-24"
-          >
-            <img
-              src={one.img}
-              alt="/"
-              className="max-w-full max-h-full object-contain"
-            />
-          </motion.div>
-        ))}
-      </motion.div>
-    </Marquee>
-  </div>
+      <div className="bg-stone-800">
+        <div className="py-6">
+          {/* MARQUEE ONE */}
+          <Marquee autoFill play={true} direction="right">
+            <motion.div className="flex gap-10 mr-6">
+              {marqueeOne.map((one, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="bg-white p-3 rounded-2xl shadow-md flex items-center justify-center w-32 h-20 md:w-40 md:h-24"
+                >
+                  <img
+                    src={one.img}
+                    alt="/"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </motion.div>
+              ))}
+            </motion.div>
+          </Marquee>
+        </div>
 
-  <div className="py-6">
-    {/* MARQUEE TWO */}
-    <Marquee autoFill play={true} direction="left" speed={40}>
-      <motion.div className="flex gap-10 mr-6">
-        {marqueeTwo.map((two, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: index * 0.1 }}
-            className="bg-white p-3 rounded-2xl shadow-md flex items-center justify-center w-32 h-20 md:w-40 md:h-24"
-          >
-            <img
-              src={two.img}
-              alt="/"
-              className="max-w-full max-h-full object-contain"
-            />
-          </motion.div>
-        ))}
-      </motion.div>
-    </Marquee>
-  </div>
+        <div className="py-6">
+          {/* MARQUEE TWO */}
+          <Marquee autoFill play={true} direction="left" speed={40}>
+            <motion.div className="flex gap-10 mr-6">
+              {marqueeTwo.map((two, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="bg-white p-3 rounded-2xl shadow-md flex items-center justify-center w-32 h-20 md:w-40 md:h-24"
+                >
+                  <img
+                    src={two.img}
+                    alt="/"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </motion.div>
+              ))}
+            </motion.div>
+          </Marquee>
+        </div>
 
-  <div className="py-6">
-    {/* MARQUEE THREE */}
-    <Marquee autoFill play={true} direction="right" speed={20}>
-      <motion.div className="flex gap-10 mr-6">
-        {marqueeThree.map((three, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: index * 0.1 }}
-            className="bg-white p-3 rounded-2xl shadow-md flex items-center justify-center w-32 h-20 md:w-40 md:h-24"
-          >
-            <img
-              src={three.img}
-              alt="/"
-              className="max-w-full max-h-full object-contain"
-            />
-          </motion.div>
-        ))}
-      </motion.div>
-    </Marquee>
-  </div>
-</div>
+        <div className="py-6">
+          {/* MARQUEE THREE */}
+          <Marquee autoFill play={true} direction="right" speed={20}>
+            <motion.div className="flex gap-10 mr-6">
+              {marqueeThree.map((three, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="bg-white p-3 rounded-2xl shadow-md flex items-center justify-center w-32 h-20 md:w-40 md:h-24"
+                >
+                  <img
+                    src={three.img}
+                    alt="/"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </motion.div>
+              ))}
+            </motion.div>
+          </Marquee>
+        </div>
+      </div>
     </>
   );
 };
