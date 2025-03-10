@@ -9,6 +9,7 @@ import {
   FaTiktok,
 } from "react-icons/fa";
 import { BsQrCode } from "react-icons/bs";
+import QrCode from "../assets/Footer/QrCode.jpg";
 
 const Footer = () => {
   return (
@@ -18,7 +19,7 @@ const Footer = () => {
         <div className="text-center md:text-left">
           <h1 className="font-madi text-7xl text-purple-700">QASH</h1>
         </div>
-        
+
         {/* Contact Section */}
         <div className="text-center md:text-left">
           <h2 className="text-2xl font-semibold flex items-center justify-center md:justify-start gap-2">
@@ -31,7 +32,9 @@ const Footer = () => {
         {/* Company Info */}
         <div className="text-center md:text-left">
           <p className="text-sm leading-relaxed">
-            QASH is powered by the country’s only end-to-end digital payments company QASH Philippines, Inc. and QASH Bank, Inc. for digital banking services.
+            QASH is powered by the country’s only end-to-end digital payments
+            company QASH Philippines, Inc. and QASH Bank, Inc. for digital
+            banking services.
           </p>
           <a
             href="https://www.bsp.gov.ph"
@@ -52,7 +55,9 @@ const Footer = () => {
             <li className="hover:text-purple-300 cursor-pointer">Home</li>
             <li className="hover:text-purple-300 cursor-pointer">User Guide</li>
             <li className="hover:text-purple-300 cursor-pointer">Deals</li>
-            <li className="hover:text-purple-300 cursor-pointer">Partner Merchants</li>
+            <li className="hover:text-purple-300 cursor-pointer">
+              Partner Merchants
+            </li>
           </ul>
         </div>
         <div>
@@ -66,8 +71,12 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold text-lg mb-3">Support</h3>
           <ul className="space-y-2 text-sm">
-            <li className="hover:text-purple-300 cursor-pointer">Help & Support</li>
-            <li className="hover:text-purple-300 cursor-pointer">App Service Status</li>
+            <li className="hover:text-purple-300 cursor-pointer">
+              Help & Support
+            </li>
+            <li className="hover:text-purple-300 cursor-pointer">
+              App Service Status
+            </li>
           </ul>
         </div>
         <div className="text-center md:text-left">
@@ -80,7 +89,14 @@ const Footer = () => {
 
       {/* Social Media Links */}
       <div className="flex justify-center gap-6 mt-10">
-        {[FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube, FaTiktok].map((Icon, index) => (
+        {[
+          FaFacebook,
+          FaTwitter,
+          FaInstagram,
+          FaLinkedin,
+          FaYoutube,
+          FaTiktok,
+        ].map((Icon, index) => (
           <a
             key={index}
             href="#"
