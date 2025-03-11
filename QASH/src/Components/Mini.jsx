@@ -11,7 +11,7 @@ const Mini = () => {
 
   return (
     <motion.div
-      className="bg-gradient-to-r from-orange-400 via-orange-800 to-orange-600 text-white py-2"
+      className="bg-gradient-to-r from-orange-400 via-orange-800 to-orange-600 text-white"
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -23,7 +23,7 @@ const Mini = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={toggleMenu}
-            className="text-white font-medium text-sm cursor-pointer"
+            className="text-white font-medium lg:text-sm text-md cursor-pointer"
           >
             {isMenuOpen ? (
               <FiX className="text-lg" />
@@ -35,7 +35,7 @@ const Mini = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="text-white font-medium text-sm flex items-center gap-1 hover:text-gray-300 cursor-pointer"
+              className="text-white font-medium lg:text-sm text-md flex items-center gap-1 hover:text-gray-300 cursor-pointer"
             >
               Help & Support{" "}
               <FiExternalLink className="text-purple-400 text-xs" />
@@ -43,7 +43,7 @@ const Mini = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="text-white font-medium text-sm flex items-center gap-1 hover:text-gray-300 cursor-pointer"
+              className="text-white font-medium lg:text-sm text-md flex items-center gap-1 hover:text-gray-300 cursor-pointer"
             >
               <FiSearch className="text-lg" /> Search
             </motion.button>
@@ -55,7 +55,7 @@ const Mini = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="text-purple-400 font-medium text-sm cursor-pointer"
+            className="text-purple-400 font-medium lg:text-sm text-md cursor-pointer"
           >
             Qash
           </motion.button>
@@ -64,7 +64,7 @@ const Mini = () => {
               key={index}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="text-white font-medium text-sm cursor-pointer hover:text-gray-300"
+              className="text-white font-medium lg:text-sm text-md cursor-pointer hover:text-gray-300"
             >
               {item}
             </motion.button>
@@ -76,7 +76,7 @@ const Mini = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="text-white font-medium text-sm flex items-center gap-1 hover:text-gray-300 cursor-pointer"
+            className="text-white font-medium lg:text-sm text-md flex items-center gap-1 hover:text-gray-300 cursor-pointer"
           >
             Help & Support{" "}
             <FiExternalLink className="text-purple-400 text-xs" />
@@ -84,7 +84,7 @@ const Mini = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="text-white font-medium text-sm flex items-center gap-1 hover:text-gray-300 cursor-pointer"
+            className="text-white font-medium lg:text-sm text-md flex items-center gap-1 hover:text-gray-300 cursor-pointer"
           >
             <FiSearch className="text-lg" /> Search
           </motion.button>
@@ -103,7 +103,7 @@ const Mini = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="text-purple-400 font-medium text-sm cursor-pointer"
+              className="text-purple-400 font-medium lg:text-sm text-md cursor-pointer"
             >
               Qash
             </motion.button>
@@ -113,7 +113,7 @@ const Mini = () => {
                   key={index}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="text-white font-medium text-sm cursor-pointer hover:text-gray-300"
+                  className="text-white font-medium lg:text-sm text-md cursor-pointer hover:text-gray-300"
                 >
                   {item}
                 </motion.button>

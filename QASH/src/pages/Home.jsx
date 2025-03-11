@@ -995,6 +995,17 @@ const Home = () => {
           </Marquee>
         </div>
       </div>
+
+      {/* LETS GROW TOGETHER */}
+      <div className="bg-stone-800 p-10 md:p-40 text-center">
+        <p className="text-center text-5xl font-bold font-inter">
+          LETS GROW TOGETHER
+        </p>
+
+        <div>
+          
+        </div>
+      </div>
     </>
   );
 };
