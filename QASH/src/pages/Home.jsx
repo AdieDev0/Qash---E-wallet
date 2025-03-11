@@ -505,7 +505,7 @@ const Home = () => {
 
             {/* 3rd Card */}
             <motion.div
-              className="flex flex-col md:flex-row gap-10 items-center bg-gradient-to-tr from-fuchsia-400 via-fuchsia-300 px-6 md:px-10 rounded-3xl w-full shadow-md my-5"
+              className="flex flex-col md:flex-row gap-0 md:gap-10 items-center bg-gradient-to-tr from-fuchsia-400 via-fuchsia-300 px-6 md:px-10 py-10 md:py-0 rounded-3xl w-full shadow-md my-5"
               variants={cardVariants}
               whileHover="hover"
             >
