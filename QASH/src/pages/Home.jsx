@@ -1095,14 +1095,14 @@ const Home = () => {
             {growCardTwo.map((solo, index) => (
               <div
                 key={index}
-                className="flex flex-col md:flex-row items-center justify-between p-6 md:p-10"
+                className="flex flex-col md:flex-row items-center justify-between "
               >
                 <img
                   src={solo.img}
                   alt={solo.title}
                   className="w-full md:w-1/2 h-48 md:h-64 object-cover rounded-xl mb-6 md:mb-0"
                 />
-                <div className="w-full md:w-1/2 text-center md:text-left md:pl-10">
+                <div className="w-full md:w-1/2 text-center md:text-left md:pl-10 pb-10 md:pb-0">
                   <h3 className="text-2xl font-bold font-inter mb-2">
                     {solo.title}
                   </h3>
