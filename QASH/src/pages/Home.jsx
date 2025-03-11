@@ -64,6 +64,8 @@ import Shell from "../assets/Home/Shell.webp";
 import Target from "../assets/Home/Target.webp";
 import Toyota from "../assets/Home/Toyota.webp";
 import WaltDisney from "../assets/Home/WaltDisney.png";
+import cashier from "../assets/Home/cashier.jpg";
+import employee from "../assets/Home/employee.jpg";
 
 const marqueeOne = [
   {
@@ -998,13 +1000,18 @@ const Home = () => {
 
       {/* LETS GROW TOGETHER */}
       <div className="bg-stone-800 p-10 md:p-40 text-center">
-        <p className="text-center text-5xl font-bold font-inter">
-          LETS GROW TOGETHER
-        </p>
-
-        <div>
-          
+        <div className="mb-10 mx-auto w-[700px]">
+          <p className="text-center text-5xl font-bold font-inter mb-5">
+            LETS GROW TOGETHER
+          </p>
+          <p className="text-gray-200 font-medium font-inter text-lg">
+            Manage your finances, offer convenient services, build trust with
+            customers and more with Maya's business solutions
+          </p>
         </div>
+
+        {/* CARDS */}
+        <div></div>
       </div>
     </>
   );
