@@ -1014,48 +1014,60 @@ const Home = () => {
       </div>
 
       {/* LETS GROW TOGETHER */}
-      <div className="bg-stone-800 p-10 md:p-40 text-center">
-        <div className="mb-20 mx-auto w-[700px]">
-          <p className="text-center text-5xl font-bold font-inter mb-5">
-            LETS GROW TOGETHER
-          </p>
-          <p className="text-gray-200 font-medium font-inter text-lg">
-            Manage your finances, offer convenient services, build trust with
-            customers and more with Maya's business solutions
-          </p>
-        </div>
 
-        {/* CARDS */}
-        <div>
-          <div className="px-5 md:px-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-              {growCard.map((card, index) => (
-                <div
-                  key={index}
-                  className="bg-gradient-to-tr from-purple-500 via-purple-700 to-purple-950 rounded-3xl shadow-xl text-white flex flex-col items-center text-center"
-                >
-                  <img
-                    src={card.img}
-                    alt={card.title}
-                    className="w-full object-cover rounded-xl mb-5"
-                  />
-                  <div className="pb-10">
-                    <h3 className="text-2xl font-bold font-inter mb-2">
-                      {card.title}
-                    </h3>
-                    <p className="text-sm font-medium text-purple-100 mb-4">
-                      {card.desc}
-                    </p>
-                    <button className="mt-4 px-6 py-2 bg-white text-purple-800 font-medium rounded-full shadow-md transition-all duration-300 hover:bg-purple-200 cursor-pointer">
-                      {card.btn}
-                    </button>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+    <div className="bg-stone-800 p-10 md:p-20 lg:p-40 text-center">
+      <motion.div
+        className="mb-20 mx-auto w-full max-w-[700px]"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <p className="text-center text-4xl md:text-5xl font-bold font-inter mb-5">
+          LETS GROW TOGETHER
+        </p>
+        <p className="text-gray-200 font-medium font-inter text-base md:text-lg">
+          Manage your finances, offer convenient services, build trust with
+          customers and more with Maya's business solutions
+        </p>
+      </motion.div>
+
+      {/* CARDS */}
+      <motion.div
+        className="px-5 md:px-10"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          {growCard.map((card, index) => (
+            <motion.div
+              key={index}
+              className="bg-gradient-to-tr from-purple-500 via-purple-700 to-purple-950 rounded-3xl shadow-xl text-white flex flex-col items-center text-center overflow-hidden"
+              variants={cardVariants}
+              whileHover="hover"
+            >
+              <img
+                src={card.img}
+                alt={card.title}
+                className="w-full h-48 md:h-64 object-cover rounded-xl mb-5"
+              />
+              <div className="pb-10 px-5">
+                <h3 className="text-2xl font-bold font-inter mb-2">
+                  {card.title}
+                </h3>
+                <p className="text-sm font-medium text-purple-100 mb-4">
+                  {card.desc}
+                </p>
+                <button className="mt-4 px-6 py-2 bg-white text-purple-800 font-medium rounded-full shadow-md transition-all duration-300 hover:bg-purple-200 cursor-pointer">
+                  {card.btn}
+                </button>
+              </div>
+            </motion.div>
+          ))}
         </div>
-      </div>
+      </motion.div>
+    </div>
     </>
   );
 };
