@@ -66,7 +66,15 @@ import Toyota from "../assets/Home/Toyota.webp";
 import WaltDisney from "../assets/Home/WaltDisney.png";
 import cashier from "../assets/Home/cashier.jpg";
 import employee from "../assets/Home/employee.jpg";
-
+import seller from "../assets/Home/seller.jpg";
+const growCardTwo = [
+  {
+    title: "verified seller",
+    desc: "Register for a badge and show your customers that you’re more than trustworthy-you’re Qash verified",
+    img: seller,
+    btn: "Get Verified",
+  },
+];
 const growCard = [
   {
     title: "QASH BUSINESS",
@@ -577,7 +585,7 @@ const Home = () => {
                   </p>
                   <p className="text-black/80 font-medium font-inter text-sm md:text-md">
                     Don't have a friend's bank account memorized? Too many
-                    details to enter? With Maya, all you need is your receiver's
+                    details to enter? With Qash, all you need is your receiver's
                     username and you're ready to send away.
                   </p>
                   <div>
@@ -600,7 +608,7 @@ const Home = () => {
                 Crypto for all
               </h1>
               <p className="text-sm md:text-md font-medium font-inter">
-                Get started with crypto through Maya. Buy, sell, send, and
+                Get started with crypto through Qash. Buy, sell, send, and
                 receive crypto anytime.
               </p>
               <p className="text-sm md:text-md font-medium font-inter">
@@ -669,7 +677,7 @@ const Home = () => {
             <div className="flex gap-4 items-center mb-6">
               <FaCheckCircle className="text-green-400 size-6 md:size-7" />
               <p className="font-bold text-xl text-gray-200">
-                Get Banked with Maya with these exclusive deals to make the
+                Get Banked with Qash with these exclusive deals to make the
                 switch painless
               </p>
             </div>
@@ -681,10 +689,10 @@ const Home = () => {
                 • Up to 1x FREE InstaPay transfer for 2 months
               </li>
               <li className="text-gray-200 font-medium text-md">
-                • Up to 15% interest p.a. with Maya Savings
+                • Up to 15% interest p.a. with Qash Savings
               </li>
               <li className="text-gray-200 font-medium text-md">
-                • FREE Maya card
+                • FREE Qash card
               </li>
             </ul>
             <p className="italic text-gray-100 text-sm">
@@ -701,7 +709,7 @@ const Home = () => {
             <div className="flex gap-4 items-center mb-6">
               <FaCheckCircle className="text-green-400 size-6 md:size-7" />
               <p className="font-bold text-xl text-gray-200">
-                Earn ₱50 for every friend that you get banked with Maya.
+                Earn ₱50 for every friend that you get banked with Qash.
               </p>
             </div>
             <div className="space-y-3 mb-6">
@@ -743,7 +751,7 @@ const Home = () => {
             How to make the most out of Qash
           </p>
           <p className="text-lg md:text-2xl font-medium font-inter text-gray-200">
-            See how Maya gives you power over your finances with these
+            See how Qash gives you power over your finances with these
             step-by-step guides.
           </p>
         </motion.div>
@@ -938,7 +946,7 @@ const Home = () => {
             Meet the QASH community
           </p>
           <p className="text-gray-200 font-bold font-inter text-xl">
-            Check out the brands that offer the Maya experience
+            Check out the brands that offer the Qash experience
           </p>
         </motion.div>
 
@@ -1037,18 +1045,19 @@ const Home = () => {
           </p>
           <p className="text-gray-200 font-medium font-inter text-base md:text-lg">
             Manage your finances, offer convenient services, build trust with
-            customers and more with Maya's business solutions
+            customers and more with Qash's business solutions
           </p>
         </motion.div>
 
         {/* CARDS */}
         <motion.div
-          className="px-5 md:px-10"
+          className="px-5 md:px-40"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
         >
+          {/* First Two Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {growCard.map((card, index) => (
               <motion.div
@@ -1076,6 +1085,37 @@ const Home = () => {
               </motion.div>
             ))}
           </div>
+
+          {/* Third Card - Horizontal Layout */}
+          <motion.div
+            className="mt-10 bg-gradient-to-tr from-purple-500 via-purple-700 to-purple-950 rounded-3xl shadow-xl text-white overflow-hidden"
+            variants={cardVariants}
+            whileHover="hover"
+          >
+            {growCardTwo.map((solo, index) => (
+              <div
+                key={index}
+                className="flex flex-col md:flex-row items-center justify-between p-6 md:p-10"
+              >
+                <img
+                  src={solo.img}
+                  alt={solo.title}
+                  className="w-full md:w-1/2 h-48 md:h-64 object-cover rounded-xl mb-6 md:mb-0"
+                />
+                <div className="w-full md:w-1/2 text-center md:text-left md:pl-10">
+                  <h3 className="text-2xl font-bold font-inter mb-2">
+                    {solo.title}
+                  </h3>
+                  <p className="text-sm font-medium text-purple-100 mb-4">
+                    {solo.desc}
+                  </p>
+                  <button className="mt-4 px-6 py-2 bg-white text-purple-800 font-medium rounded-full shadow-md transition-all duration-300 hover:bg-purple-200 cursor-pointer">
+                    {solo.btn}
+                  </button>
+                </div>
+              </div>
+            ))}
+          </motion.div>
         </motion.div>
       </div>
     </>
