@@ -36,7 +36,7 @@ const Navbar = () => {
         {/* Desktop Navbar */}
         <div className="hidden sm:flex items-center gap-3">
           <NavLink to="/">
-            <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-300 p-2 font-inter text-sm">
+            <h1 className="text-white cursor-pointer rounded-md font-medium hover:bg-stone-500 duration-300 p-2 font-inter text-sm">
               Home
             </h1>
           </NavLink>
@@ -46,7 +46,7 @@ const Navbar = () => {
             <div
               tabIndex={0}
               role="button"
-              className="m-1 flex items-center text-white gap-1 cursor-pointer rounded-md hover:bg-stone-500 duration-300 p-2 font-inter text-sm"
+              className="m-1 flex items-center text-white font-bold gap-1 cursor-pointer rounded-md hover:bg-stone-500 duration-300 p-2 font-inter text-sm"
             >
               Services <FaAngleDown />
             </div>
@@ -55,10 +55,24 @@ const Navbar = () => {
               className="dropdown-content menu bg-white rounded-box z-1 w-52 p-2 shadow-sm"
             >
               <li>
-                <a>Item 1</a>
+                <a className="text-black/80 font-inter font-medium">Transfer</a>
               </li>
               <li>
-                <a>Item 2</a>
+                <a className="text-black/80 font-inter font-medium">Grow</a>
+              </li>
+              <li>
+                <a className="text-black/80 font-inter font-medium">Load</a>
+              </li>
+              <li>
+                <a className="text-black/80 font-inter font-medium">Sell</a>
+              </li>
+              <li>
+                <a className="text-black/80 font-inter font-medium">Shop</a>
+              </li>
+              <li>
+                <a className="text-black/80 font-inter font-medium">
+                  Explore all feature
+                </a>
               </li>
             </ul>
           </div>
@@ -67,7 +81,7 @@ const Navbar = () => {
             <div
               tabIndex={0}
               role="button"
-              className="m-1 flex items-center text-white gap-1  cursor-pointer rounded-md hover:bg-stone-500 duration-300 p-2 font-inter text-sm"
+              className="m-1 flex items-center text-white gap-1 font-medium cursor-pointer rounded-md hover:bg-stone-500 duration-300 p-2 font-inter text-sm"
             >
               User Guide <FaAngleDown />
             </div>
@@ -76,23 +90,23 @@ const Navbar = () => {
               className="dropdown-content menu bg-white rounded-box z-1 w-52 p-2 shadow-sm"
             >
               <li>
-                <a>Item 1</a>
+                <a className="text-black/80">Item 1</a>
               </li>
               <li>
-                <a>Item 2</a>
+                <a className="text-black/80">Item 2</a>
               </li>
             </ul>
           </div>
-          <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-300 p-2 font-inter text-sm">
+          <h1 className="text-white cursor-pointer rounded-md font-medium hover:bg-stone-500 duration-300 p-2 font-inter text-sm">
             Deals
           </h1>
-          <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-300 p-2 font-inter text-sm">
+          <h1 className="text-white cursor-pointer rounded-md font-medium hover:bg-stone-500 duration-300 p-2 font-inter text-sm">
             Partner Merchants
           </h1>
-          <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-300 p-2 font-inter text-sm">
+          <h1 className="text-white cursor-pointer rounded-md font-medium hover:bg-stone-500 duration-300 p-2 font-inter text-sm">
             Stories
           </h1>
-          <h1 className="text-white cursor-pointer rounded-md hover:bg-stone-500 duration-300 p-2 font-inter text-sm">
+          <h1 className="text-white cursor-pointer rounded-md font-medium hover:bg-stone-500 duration-300 p-2 font-inter text-sm">
             Careers
           </h1>
           <button className="bg-white px-5 py-2 font-medium rounded-xl text-black cursor-pointer hover:bg-white/85 duration-300 font-inter text-sm">
@@ -134,10 +148,26 @@ const Navbar = () => {
                   className="dropdown-content menu bg-white rounded-box z-1 w-52 p-2 shadow-sm"
                 >
                   <li>
-                    <a>Item 1</a>
+                    <a className="text-black/80 font-inter font-medium">
+                      Transfer
+                    </a>
                   </li>
                   <li>
-                    <a>Item 2</a>
+                    <a className="text-black/80 font-inter font-medium">Grow</a>
+                  </li>
+                  <li>
+                    <a className="text-black/80 font-inter font-medium">Load</a>
+                  </li>
+                  <li>
+                    <a className="text-black/80 font-inter font-medium">Sell</a>
+                  </li>
+                  <li>
+                    <a className="text-black/80 font-inter font-medium">Shop</a>
+                  </li>
+                  <li>
+                    <a className="text-black/80 font-inter font-medium">
+                      Explore all feature
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -145,7 +175,7 @@ const Navbar = () => {
                 <div
                   tabIndex={0}
                   role="button"
-                  className="m-1 flex items-center text-white gap-1  cursor-pointer rounded-md hover:bg-stone-500 duration-300 p-2 font-inter text-sm"
+                  className="m-1 flex items-center text-white gap-1 cursor-pointer rounded-md hover:bg-stone-500 duration-300 p-2 font-inter text-sm"
                 >
                   User Guide <FaAngleDown />
                 </div>
@@ -154,10 +184,14 @@ const Navbar = () => {
                   className="dropdown-content menu bg-white rounded-box z-1 w-52 p-2 shadow-sm"
                 >
                   <li>
-                    <a>Item 1</a>
+                    <a className="text-black/80 font-medium font-inter">
+                      Item 1
+                    </a>
                   </li>
                   <li>
-                    <a>Item 2</a>
+                    <a className="text-black/80 font-medium font-inter">
+                      Item 2
+                    </a>
                   </li>
                 </ul>
               </div>
