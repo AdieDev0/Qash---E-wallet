@@ -456,43 +456,47 @@ const Home = () => {
             <div className="flex flex-col md:flex-row gap-5 my-5">
               {/* 1st Card */}
               <motion.div
-                className="items-center bg-gradient-to-tr from-orange-500 via-orange-300 px-10 py-12 rounded-3xl w-full md:w-1/2 shadow-md"
+                className="items-center bg-gradient-to-tr from-orange-500 via-orange-300 px-6 py-8 md:px-10 md:py-12 rounded-3xl w-full md:w-1/2 shadow-md"
                 variants={cardVariants}
                 whileHover="hover"
               >
                 <div className="grid gap-5 mb-10">
-                  <p className="text-2xl font-bold font-inter text-gray-200">
+                  <p className="text-xl md:text-2xl font-bold font-inter text-gray-200">
                     Get your very own physical Qash card?
                   </p>
-                  <p className="font-inter text-gray-200 font-semibold">
+                  <p className="font-inter text-gray-200 font-semibold text-sm md:text-base">
                     Shop to your heart’s delight or withdraw cash with a cool
                     black card with your @username on it
                   </p>
-                  <p className="font-inter text-gray-200 font-semibold">
+                  <p className="font-inter text-gray-200 font-semibold text-sm md:text-base">
                     Want a FREE Qash card? Click here to learn more.
                   </p>
                 </div>
-                <button className="px-10 py-5 bg-purple-700 mx-auto text-gray-200 font-bold font-inter rounded-xl hover:bg-purple-600 duration-200 cursor-pointer">
+                <button className="px-8 py-4 md:px-10 md:py-5 bg-purple-700 mx-auto text-gray-200 font-bold font-inter rounded-xl hover:bg-purple-600 duration-200 cursor-pointer text-sm md:text-base">
                   Get a Qash card
                 </button>
-                <img src={CredCard} alt="" className="w-96 mt-10 mx-auto" />
+                <img
+                  src={CredCard}
+                  alt=""
+                  className="w-64 md:w-96 mt-10 mx-auto"
+                />
               </motion.div>
 
               {/* 2nd Card */}
               <motion.div
-                className="items-center bg-gradient-to-tr from-emerald-500 via-emerald-300 px-10 pt-12 rounded-3xl w-full md:w-1/2 shadow-md"
+                className="items-center bg-gradient-to-tr from-emerald-500 via-emerald-300 px-6 pt-8 md:px-10 md:pt-12 rounded-3xl w-full md:w-1/2 shadow-md"
                 variants={cardVariants}
                 whileHover="hover"
               >
                 <div className="grid gap-5 mb-10">
-                  <p className="text-2xl font-bold font-inter text-black/80">
+                  <p className="text-xl md:text-2xl font-bold font-inter text-black/80">
                     It’s easy to get banked with Qash
                   </p>
-                  <p className="font-inter text-black/80 font-semibold">
+                  <p className="font-inter text-black/80 font-semibold text-sm md:text-base">
                     Qash gives the safety of a bank and convenience of a wallet.
                   </p>
                 </div>
-                <button className="px-10 py-5 bg-white mx-auto text-black/80 font-bold font-inter rounded-xl hover:bg-white/90 duration-200 cursor-pointer">
+                <button className="px-8 py-4 md:px-10 md:py-5 bg-white mx-auto text-black/80 font-bold font-inter rounded-xl hover:bg-white/90 duration-200 cursor-pointer text-sm md:text-base">
                   Get banked
                 </button>
                 <img src={ModelCard} alt="" className="w-full mt-10" />
@@ -501,22 +505,22 @@ const Home = () => {
 
             {/* 3rd Card */}
             <motion.div
-              className="flex flex-col md:flex-row gap-10 items-center bg-gradient-to-tr from-fuchsia-400 via-fuchsia-300 px-10 rounded-3xl w-full shadow-md my-5"
+              className="flex flex-col md:flex-row gap-10 items-center bg-gradient-to-tr from-fuchsia-400 via-fuchsia-300 px-6 md:px-10 rounded-3xl w-full shadow-md my-5"
               variants={cardVariants}
               whileHover="hover"
             >
               <div className="grid gap-5 mb-10">
-                <p className="text-2xl font-bold font-inter text-black/80">
+                <p className="text-xl md:text-2xl font-bold font-inter text-black/80">
                   Landers Cashback Everywhere Credit Card by Qash It’s easy to
                   get banked with Qash
                 </p>
-                <p className="font-inter text-black/80 font-semibold">
+                <p className="font-inter text-black/80 font-semibold text-sm md:text-base">
                   Enjoy having both a credit card and membership in one to get
                   all the benefits of being a Landers member and all the perks
                   of a credit card.
                 </p>
                 <div>
-                  <button className="px-10 py-5 bg-white mx-auto text-black/80 font-bold font-inter rounded-xl hover:bg-white/90 duration-200 cursor-pointer">
+                  <button className="px-8 py-4 md:px-10 md:py-5 bg-white mx-auto text-black/80 font-bold font-inter rounded-xl hover:bg-white/90 duration-200 cursor-pointer text-sm md:text-base">
                     Learn More
                   </button>
                 </div>
@@ -538,67 +542,73 @@ const Home = () => {
               variants={itemVariants}
             >
               <motion.div
-                className="flex flex-col md:flex-row justify-between bg-gradient-to-tr from-gray-300 via-gray-200 rounded-3xl shadow-md p-10"
+                className="flex flex-col md:flex-row justify-between bg-gradient-to-tr from-gray-300 via-gray-200 rounded-3xl shadow-md p-6 md:p-10"
                 variants={cardVariants}
                 whileHover="hover"
               >
                 <div className="grid gap-5 w-full">
-                  <p className="text-black/80 font-bold font-inter text-2xl">
+                  <p className="text-black/80 font-bold font-inter text-xl md:text-2xl">
                     Zero to ₱30,000 in seconds
                   </p>
-                  <p className="text-black/80 font-medium font-inter text-md">
+                  <p className="text-black/80 font-medium font-inter text-sm md:text-md">
                     Get approval of up to 30k credit line with Qash Credit!
                   </p>
                   <div>
-                    <button className="bg-purple-700 font-bold font-inter hover:bg-purple-600 duration-200 px-10 py-5 rounded-xl cursor-pointer">
+                    <button className="bg-purple-700 font-bold font-inter hover:bg-purple-600 duration-200 px-8 py-4 md:px-10 md:py-5 rounded-xl cursor-pointer text-sm md:text-base">
                       Apply for Qash Credit
                     </button>
                   </div>
                 </div>
-                <img src={UndrawPayment} alt="" className="w-96 object-cover" />
+                <img
+                  src={UndrawPayment}
+                  alt=""
+                  className="w-64 md:w-96 object-cover"
+                />
               </motion.div>
 
               <motion.div
-                className="flex flex-col md:flex-row gap-10 bg-gradient-to-tr from-gray-100 via-gray-200 rounded-3xl shadow-md p-10"
+                className="flex flex-col md:flex-row gap-10 bg-gradient-to-tr from-gray-100 via-gray-200 rounded-3xl shadow-md p-6 md:p-10"
                 variants={cardVariants}
                 whileHover="hover"
               >
                 <div className="grid gap-5 w-full">
-                  <p className="text-black/80 font-bold font-inter text-2xl">
+                  <p className="text-black/80 font-bold font-inter text-xl md:text-2xl">
                     Did you know you can send money using @usernames?
                   </p>
-                  <p className="text-black/80 font-medium font-inter text-md">
+                  <p className="text-black/80 font-medium font-inter text-sm md:text-md">
                     Don't have a friend's bank account memorized? Too many
                     details to enter? With Maya, all you need is your receiver's
                     username and you're ready to send away.
                   </p>
                   <div>
-                    <button className="bg-purple-700 font-bold font-inter hover:bg-purple-600 duration-200 px-10 py-5 rounded-xl cursor-pointer">
+                    <button className="bg-purple-700 font-bold font-inter hover:bg-purple-600 duration-200 px-8 py-4 md:px-10 md:py-5 rounded-xl cursor-pointer text-sm md:text-base">
                       Create your @username now
                     </button>
                   </div>
                 </div>
-                <img src={Email} alt="" className="w-60 object-cover" />
+                <img src={Email} alt="" className="w-48 md:w-60 object-cover" />
               </motion.div>
             </motion.div>
 
             {/* Second Card */}
             <motion.div
-              className="bg-gradient-to-tr from-blue-300 via-blue-400 p-10 rounded-3xl w-full md:w-1/3 shadow-md grid gap-5"
+              className="bg-gradient-to-tr from-blue-300 via-blue-400 p-6 md:p-10 rounded-3xl w-full md:w-1/3 shadow-md grid gap-5"
               variants={cardVariants}
               whileHover="hover"
             >
-              <h1 className="text-4xl font-bold font-inter">Crypto for all</h1>
-              <p className="text-md font-medium font-inter">
+              <h1 className="text-2xl md:text-4xl font-bold font-inter">
+                Crypto for all
+              </h1>
+              <p className="text-sm md:text-md font-medium font-inter">
                 Get started with crypto through Maya. Buy, sell, send, and
                 receive crypto anytime.
               </p>
-              <p className="text-md font-medium font-inter">
+              <p className="text-sm md:text-md font-medium font-inter">
                 Plus, you have access to over a dozen currencies and everything
                 you need to learn about crypto, all in the app.
               </p>
               <div>
-                <button className="bg-lime-500 font-bold font-inter hover:bg-lime-400 duration-200 px-10 py-5 rounded-xl cursor-pointer">
+                <button className="bg-lime-500 font-bold font-inter hover:bg-lime-400 duration-200 px-8 py-4 md:px-10 md:py-5 rounded-xl cursor-pointer text-sm md:text-base">
                   Create your @username now
                 </button>
               </div>
@@ -1015,59 +1025,59 @@ const Home = () => {
 
       {/* LETS GROW TOGETHER */}
 
-    <div className="bg-stone-800 p-10 md:p-20 lg:p-40 text-center">
-      <motion.div
-        className="mb-20 mx-auto w-full max-w-[700px]"
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        <p className="text-center text-4xl md:text-5xl font-bold font-inter mb-5">
-          LETS GROW TOGETHER
-        </p>
-        <p className="text-gray-200 font-medium font-inter text-base md:text-lg">
-          Manage your finances, offer convenient services, build trust with
-          customers and more with Maya's business solutions
-        </p>
-      </motion.div>
+      <div className="bg-stone-800 p-10 md:p-20 lg:p-40 text-center">
+        <motion.div
+          className="mb-20 mx-auto w-full max-w-[700px]"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <p className="text-center text-4xl md:text-5xl font-bold font-inter mb-5">
+            LETS GROW TOGETHER
+          </p>
+          <p className="text-gray-200 font-medium font-inter text-base md:text-lg">
+            Manage your finances, offer convenient services, build trust with
+            customers and more with Maya's business solutions
+          </p>
+        </motion.div>
 
-      {/* CARDS */}
-      <motion.div
-        className="px-5 md:px-10"
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-      >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {growCard.map((card, index) => (
-            <motion.div
-              key={index}
-              className="bg-gradient-to-tr from-purple-500 via-purple-700 to-purple-950 rounded-3xl shadow-xl text-white flex flex-col items-center text-center overflow-hidden"
-              variants={cardVariants}
-              whileHover="hover"
-            >
-              <img
-                src={card.img}
-                alt={card.title}
-                className="w-full h-48 md:h-64 object-cover rounded-xl mb-5"
-              />
-              <div className="pb-10 px-5">
-                <h3 className="text-2xl font-bold font-inter mb-2">
-                  {card.title}
-                </h3>
-                <p className="text-sm font-medium text-purple-100 mb-4">
-                  {card.desc}
-                </p>
-                <button className="mt-4 px-6 py-2 bg-white text-purple-800 font-medium rounded-full shadow-md transition-all duration-300 hover:bg-purple-200 cursor-pointer">
-                  {card.btn}
-                </button>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </motion.div>
-    </div>
+        {/* CARDS */}
+        <motion.div
+          className="px-5 md:px-10"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            {growCard.map((card, index) => (
+              <motion.div
+                key={index}
+                className="bg-gradient-to-tr from-purple-500 via-purple-700 to-purple-950 rounded-3xl shadow-xl text-white flex flex-col items-center text-center overflow-hidden"
+                variants={cardVariants}
+                whileHover="hover"
+              >
+                <img
+                  src={card.img}
+                  alt={card.title}
+                  className="w-full h-48 md:h-64 object-cover rounded-xl mb-5"
+                />
+                <div className="pb-10 px-5">
+                  <h3 className="text-2xl font-bold font-inter mb-2">
+                    {card.title}
+                  </h3>
+                  <p className="text-sm font-medium text-purple-100 mb-4">
+                    {card.desc}
+                  </p>
+                  <button className="mt-4 px-6 py-2 bg-white text-purple-800 font-medium rounded-full shadow-md transition-all duration-300 hover:bg-purple-200 cursor-pointer">
+                    {card.btn}
+                  </button>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+      </div>
     </>
   );
 };
