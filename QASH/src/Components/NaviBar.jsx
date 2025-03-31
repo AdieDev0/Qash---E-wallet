@@ -90,10 +90,10 @@ const Navbar = () => {
               className="dropdown-content menu bg-white rounded-box z-1 w-52 p-2 shadow-sm"
             >
               <li>
-                <a className="text-black/80">Acount Limits</a>
+                <a className="text-black/80 font-inter font-medium">Acount Limits</a>
               </li>
               <li>
-                <a className="text-black/80">Item 2</a>
+                <a className="text-black/80 font-inter font-medium">Item 2</a>
               </li>
             </ul>
           </div>
