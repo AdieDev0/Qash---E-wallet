@@ -96,7 +96,7 @@ const Navbar = () => {
                 <a className="text-black/80 font-inter font-medium">Activate Virtual Card</a>
               </li>
               <li>
-                <a className="text-black/80 font-inter font-medium">Activate Virtual Card</a>
+                <a className="text-black/80 font-inter font-medium">All Guides</a>
               </li>
             </ul>
           </div>
