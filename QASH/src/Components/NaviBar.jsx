@@ -102,7 +102,7 @@ const Navbar = () => {
                 <a className="text-black/80 font-inter font-medium">Bank Transfer</a>
               </li>
               <li>
-                <a className="text-black/80 font-inter font-medium">Bank Transfer</a>
+                <a className="text-black/80 font-inter font-medium">Bills Payment</a>
               </li>
             </ul>
           </div>
