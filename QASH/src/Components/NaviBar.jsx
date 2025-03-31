@@ -93,7 +93,7 @@ const Navbar = () => {
                 <a className="text-black/80 font-inter font-medium">Acount Limits</a>
               </li>
               <li>
-                <a className="text-black/80 font-inter font-medium">Item 2</a>
+                <a className="text-black/80 font-inter font-medium">Activate Virtual Card</a>
               </li>
             </ul>
           </div>
