@@ -95,6 +95,9 @@ const Navbar = () => {
               <li>
                 <a className="text-black/80 font-inter font-medium">Activate Virtual Card</a>
               </li>
+              <li>
+                <a className="text-black/80 font-inter font-medium">Activate Virtual Card</a>
+              </li>
             </ul>
           </div>
           <h1 className="text-white cursor-pointer rounded-md font-medium hover:bg-stone-500 duration-300 p-2 font-inter text-sm">
